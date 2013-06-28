@@ -5,6 +5,7 @@ Oscail is a light and clean theme for use on [Octopress](http://octopress.org/) 
 ## Installation
 
 You can install Oscail like so:
+
     $ cd your_octopress_directory
     $ git clone https://github.com/coogie/oscail.git .themes/oscail
     $ rake install['oscail']
