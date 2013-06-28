@@ -1,0 +1,24 @@
+---
+layout: default
+social_links: true
+---
+
+<div class="grid-wrapper">
+  <div class="grid grid-center">
+    <div id="content" class="grid__item two-thirds lap-one-whole palm-one-whole">
+      <article class="post">
+        {% include blog/post/article.html %}
+      </article>
+      {% if site.disqus_short_name and page.comments == true %} 
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+      </section>
+      {% endif %}
+    </div>
+
+    {% unless page.sidebar == false %}
+      {% include site/sidebar.html %}
+    {% endunless %}
+  </div>
+</div>

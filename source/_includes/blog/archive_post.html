@@ -1,0 +1,10 @@
+<header>
+  <h1 class="gamma">
+    <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a>
+  </h1>
+  <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
+</header>
+<!-- 
+{{ content }} -->
+
+<a class="btn" href="{{ root_url }}{{ post.url }}">Read on &raquo;</a>

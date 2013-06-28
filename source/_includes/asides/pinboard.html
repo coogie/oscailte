@@ -1,0 +1,13 @@
+{% if site.pinboard_user %}
+<section id="pinterest" class="aside-module grid__item one-whole lap-one-half">
+  <h1 class="title delta">
+    My Pinboard
+    <small class="pull-right">
+      <a class="btn" href="http://pinboard.in/u:{{ site.pinboard_user }}" title="My Pinboard Bookmarks" target="_blank">
+        <i class="icon-external-link"></i>
+      </a>
+    </small>
+  </h1>
+  <ul class="divided" id="pinboard_linkroll">Fetching linkroll...</ul>
+</section>
+{% endif %}

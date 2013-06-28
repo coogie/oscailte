@@ -1,0 +1,19 @@
+.listing {
+  margin-bottom: 2.5em;
+  // overflow: hidden;
+
+  header {
+    border-bottom: 1px solid $blue;
+    margin-bottom: 1em;
+    h1 {
+      color: $blue;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+    time {
+      @extend .pull-right;
+      font-size: 0.8em;
+      font-style: italic;
+    }
+  }
+} 

@@ -1,0 +1,14 @@
+{% capture category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
+{% unless category == '0' %}
+<ul class="pull-right tags unstyled">
+  {% if post %}
+  {% for category in post.categories %}
+    <li><a href="{{ root_url }}/{{ site.category_dir }}/{{ category }}/">{{ category }}</a></li>
+  {% endfor %}
+  {% else %}
+  {% for category in page.categories %}
+    <li><a href="{{ root_url }}/{{ site.category_dir }}/{{ category }}/">{{ category }}</a></li>
+  {% endfor %}
+  {% endif %}
+</ul>
+{% endunless %}

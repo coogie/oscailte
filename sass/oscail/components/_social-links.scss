@@ -1,0 +1,87 @@
+.social {
+  a {
+    @include box-sizing(border-box);
+    @include box-shadow(2px 2px 0 darken($grayLighter, 10%));
+    background-color: $grayLighter;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 7px;
+    padding: 1em;
+    padding-right: 0.5em;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    z-index: 5;
+    @include transition(
+      box-shadow 200ms,
+      color 400ms,
+      transform 400ms
+    );
+
+    &:hover {
+      border: none;
+      color: $white !important;
+      text-decoration: none;
+      z-index: 7;
+      &::before {
+        border: 1px solid;
+        height: 100%;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    &::before {
+      background-color: #D62121;
+      border-radius: 4px;
+      content: "";
+      height: 1px;
+      position: absolute;
+        top: 50%; left: 0%;
+      width: 0;
+      z-index: -1;
+      @include transition(
+        border 200ms,
+        height 200ms 200ms,
+        top 200ms 200ms,
+        width 200ms
+      );
+    }
+
+    i {
+      font-size: 2em;
+      line-height: 0.8em;
+      margin-right: 0.35em;
+    }
+
+    &.twitter {
+      color: $twitter;
+      &::before {
+        background-color: $twitter;
+        border-color: darken($twitter, 5%);
+      }
+    }
+    &.github {
+      color: $github;
+      &::before {
+        background-color: $github;
+        border-color: darken($github, 5%);
+      }
+    }
+    &.google-plus {
+      color: $google-plus;
+      &::before {
+        background-color: $google-plus;
+        border-color: darken($google-plus, 5%);
+      }
+    }
+    &.linkedin {
+      color: $linkedin;
+      &::before {
+        background-color: $linkedin;
+        border-color: darken($linkedin, 5%);
+      }
+    }
+  }
+}

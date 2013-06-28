@@ -1,0 +1,23 @@
+---
+layout: nil
+---
+
+/* TEAM */
+Author: {{ site.author }}
+Site: {{ root_url }}
+{% if site.twitter_user %}Twitter: http://www.twitter.com/{{ site.twitter_user }}{% endif %}
+{% if site.github_user %}Github: http://www.github.com/{{ site.github_user }}{% endif %}
+
+/* THANKS */
+Stephen Coogan - Developer of theme, Oscail (http://github.com/coogie/oscail.git)
+  -- Twitter: http://www.twitter.com/coog_ie
+  -- Github: http://www.github.com/coogie
+  -- Website: http://www.coog.ie/
+
+/* COLOPHON */
+Components:
+  -- inuit.css (http://inuitcss.com/)
+  -- Navigataur (https://github.com/micjamking/Navigataur)
+Powered by:
+  -- Jekyll
+  -- Octopress

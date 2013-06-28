@@ -1,0 +1,11 @@
+footer.main {
+  @include box-shadow(0 0 3px rgba(0, 0, 0, 0.15));
+  background-color: $white;
+  margin-top: 1em;
+  padding: 2em 0;
+
+  .copyright {
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+}

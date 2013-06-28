@@ -1,0 +1,5 @@
+<h1 class="indent">{{ post.title }}</h1>
+<div class="meta">
+  {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+  {% include post/tags.html %}
+</div>

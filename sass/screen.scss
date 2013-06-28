@@ -1,0 +1,14 @@
+$oscail-assets: "..";
+
+$use-grids: true;
+$site-width: 1100px;
+$responsive: true;
+
+$use-gridfix: true;
+
+// $debug-mode: true;
+
+@import 'inuit_css/inuit';
+@import 'oscail/oscail';
+@import 'font-awesome/font-awesome';
+ 

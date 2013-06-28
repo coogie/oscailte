@@ -1,0 +1,11 @@
+{% if page.social_links %}
+<section class="social aside-module grid__item one-whole lap-one-half">
+  <h1 class="title delta">Stalk me!</h1>
+  <ul class="unstyled">
+    {% if site.twitter_user %}<li><a class="twitter" href="//twitter.com/{{ site.twitter_user }}"><i class="icon-twitter"></i> Twitter</a></li>{% endif %}
+    {% if site.github_user %}<li><a class="github" href="//github.com/{{ site.github_user }}"><i class="icon-github"></i> Github</a></li>{% endif %}
+    {% if site.googleplus_user %}<li><a class="google-plus" href="//plus.google.com/{{ site.googleplus_user }}"><i class="icon-google-plus"></i> Google+</a></li>{% endif %}
+    {% if site.linkedin_user %}<li><a class="linkedin" href="//linkedin.com/in/{{ site.linkedin_user }}"><i class="icon-linkedin"></i> LinkedIn</a></li>{% endif %}
+  </ul>
+</section>
+{% endif %}

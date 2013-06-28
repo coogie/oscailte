@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{% assign index = true %}
+{% for post in site.posts reverse %}
+{% assign content = post.content %}
+
+<article class="listing">
+  {% include blog/post/article.html %}
+</article>
+
+{% endfor %}
