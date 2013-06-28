@@ -3,7 +3,8 @@ header + .hero {
 }
 
 .hero {
-  background: url("#{$oscail-assets}/images/dublin-docks.jpg") 0 50% $grayDarker;
+  background-color: $grayDarker;
+  background-position: 0 50%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
