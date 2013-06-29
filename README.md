@@ -4,7 +4,7 @@ Oscail is a light and clean theme, built using [inuit.css](http://inuitcss.com/)
 
 ## Installation
 
-Oscail requires that you use Sass 3.2.9 (Media Mark), so you may need to run a `bundle update` before you run your initial `rake generate` after installing the theme. You can check your current gem version by running `gem list sass` in your Octopress directory.
+Oscail requires that you use Sass 3.2.9 (Media Mark) or greater, so you may need to run a `bundle update` before you run your initial `rake generate` after installing the theme. You can check your current gem version by running `gem list sass` in your Octopress directory.
 
 You can install Oscail like so:
 
