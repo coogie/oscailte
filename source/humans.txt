@@ -9,7 +9,7 @@ Site: {{ root_url }}
 {% if site.github_user %}Github: http://www.github.com/{{ site.github_user }}{% endif %}
 
 /* THANKS */
-Stephen Coogan - Developer of theme, Oscail (http://github.com/coogie/oscail.git)
+Stephen Coogan - Developer of theme, Oscailte (http://github.com/coogie/oscailte.git)
   -- Twitter: http://www.twitter.com/coog_ie
   -- Github: http://www.github.com/coogie
   -- Website: http://www.coog.ie/
