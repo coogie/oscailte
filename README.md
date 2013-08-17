@@ -30,7 +30,7 @@ If you wish to make use of the Gravatar feature, please ensure you use an email 
 
 Oscailte allows you to display links to your other online profiles in a quick and easy fashion. To display the sidebar links to your other profiles, you must add the following to your `_config.yml` file.
 
-(Oscailte does not make use of the default `github_user` and `twitter_user` keys)
+~~(Oscailte does not make use of the default `github_user` and `twitter_user` keys)~~
 
 ```` yml
 social:
