@@ -1,10 +1,25 @@
-<header>
-  <h1 class="gamma">
-    <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a>
-  </h1>
-  <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
-</header>
-<!-- 
-{{ content }} -->
+{% capture category %}{{ post.categories | size }}{% endcapture %}
 
-<a class="btn" href="{{ root_url }}{{ post.url }}">Read on &raquo;</a>
+<div class="grid">
+
+  <div class="grid__item one-fifth palm-one-whole">
+    <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>
+      {{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span>"}}
+    </time>
+  </div>
+  <div class="grid__item four-fifths palm-one-whole">
+    <h1 class="gamma"><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h1>
+    {% if category != '0' %}
+    <footer class="meta">
+      <i class="icon-tags"></i>
+      <ul class="tags unstyled pull-left">
+      {% for category in post.categories %}
+        <li><a href="{{ root_url }}/{{ site.category_dir }}/{{ category }}/">{{ category }}</a></li>
+      {% endfor %}
+      </ul>
+    </footer>
+    {% endif %}
+    <hr class="divider">
+  </div>
+
+</div>

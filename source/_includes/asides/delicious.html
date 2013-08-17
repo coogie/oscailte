@@ -3,11 +3,15 @@
   <h1 class="title delta">
     Delicious
     <small class="pull-right">
-      <a class="btn" href="http://delicious.com/{{ site.delicious_user }}" title="@{{ site.delicious_user }} on Delicious" target="_blank">
+      <a class="btn" href="//delicious.com/{{ site.delicious_user }}" title="@{{ site.delicious_user }} on Delicious" target="_blank">
         <i class="icon-external-link"></i>
       </a>
     </small>
   </h1>
-  <div id="delicious"></div>
+  <div id="delicious">
+    <span class="loading">
+      <i class="icon-spinner icon-spin"></i>
+    </span>
+  </div>
 </section>
 {% endif %}
