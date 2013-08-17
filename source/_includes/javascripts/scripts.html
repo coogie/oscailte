@@ -1,0 +1,11 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+{% if site.gravatar != false %}<script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>{% endif %}
+<script defer src="{{ root_url }}/javascripts/octopress.js"></script>
+
+{% include javascripts/google_analytics.html %}
+{% include javascripts/disqus.html %}
+
+{% if page.sidebar != false %}
+{% include javascripts/github.html %}
+{% include javascripts/delicious.html %}
+{% endif %}

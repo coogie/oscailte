@@ -14,7 +14,37 @@ You can install Oscailte like so:
     $ bundle update //You may or may not need this, check note above
     $ rake generate
 
-## To-do
+## Features
 
-There is a lot left to do on this them and I will be adding a list here with a bunch of things that need adding or fixing.
-If there is anything you'd like to fix yourself, or anything that you wish to add, then by all means create an issue or a pull request!
+### Homepage
+
+Oscailte includes a clean page, separated from the blogging capabilities of Octopress. The theme can be modified to instead use just the blog index as the homepage.
+
+### Gravatar
+
+Oscailte makes use of the `site.email` used in `_config.yml` (if present) to grab and display your Gravatar if you use one. Otherwise, the theme will instead display the default Gravatar logo, which can be changed by replacing the file locally.
+
+If you wish to make use of the Gravatar feature, please ensure you use an email address that you do not mind being publicly crawlable by bots/spiders.
+
+### Social Sidebar
+
+Oscailte allows you to display links to your other online profiles in a quick and easy fashion. To display the sidebar links to your other profiles, you must add the following to your `_config.yml` file.
+
+~~(Oscailte does not make use of the default `github_user` and `twitter_user` keys)~~
+
+```` yml
+social:
+  title: # Defaults to "Follow me!" if not present
+  adn: # App.net
+  dribbble: 
+  facebook: 
+  github: 
+  googleplus: 
+  linkedin: 
+  pinterest: 
+  stackoverflow: 
+  twitter: 
+  youtube: 
+````
+
+Oscailte only supports the above sites, but more may be (infinitely) added as the user sees fit.

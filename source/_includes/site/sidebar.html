@@ -1,10 +1,7 @@
-<aside id="sidebar" class="grid__item one-third lap-one-whole palm-one-whole">
-  <div class="grid">
-      {% include asides/social.html %}
-    {% if site.post_asides.size %}
-      {% include_array post_asides %}
-    {% else %}
-      {% include_array default_asides %}
-    {% endif %}
-  </div>
-</aside>
+<div class="grid">
+
+  {% include asides/social.html %}
+
+  {% include_array default_asides %}
+
+</div>

@@ -1,8 +1,0 @@
-.avatar {
-  text-align: center;
-
-  > img {
-    @include border-radius(50%);
-    border: 10px solid $blue;
-  }
-}
