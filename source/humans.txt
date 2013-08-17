@@ -10,8 +10,8 @@ Site: {{ root_url }}
 
 /* THANKS */
 Stephen Coogan - Developer of theme, Oscailte (https://github.com/coogie/oscailte/)
-  -- Twitter: http://www.twitter.com/coog_ie
-  -- Github: http://www.github.com/coogie
+  -- Twitter: https://www.twitter.com/coog_ie
+  -- Github: https://www.github.com/coogie
   -- Website: http://www.coog.ie/
 
 /* COLOPHON */
