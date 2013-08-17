@@ -5,11 +5,11 @@ layout: nil
 /* TEAM */
 Author: {{ site.author }}
 Site: {{ root_url }}
-{% if site.twitter_user %}Twitter: http://www.twitter.com/{{ site.twitter_user }}{% endif %}
-{% if site.github_user %}Github: http://www.github.com/{{ site.github_user }}{% endif %}
+{% if site.social.twitter %}Twitter: https://www.twitter.com/{{ site.social.twitter }}{% endif %}
+{% if site.social.github %}Github: https://www.github.com/{{ site.social.github }}{% endif %}
 
 /* THANKS */
-Stephen Coogan - Developer of theme, Oscailte (http://github.com/coogie/oscailte.git)
+Stephen Coogan - Developer of theme, Oscailte (https://github.com/coogie/oscailte/)
   -- Twitter: http://www.twitter.com/coog_ie
   -- Github: http://www.github.com/coogie
   -- Website: http://www.coog.ie/
@@ -17,7 +17,8 @@ Stephen Coogan - Developer of theme, Oscailte (http://github.com/coogie/oscailte
 /* COLOPHON */
 Components:
   -- inuit.css (http://inuitcss.com/)
-  -- Navigataur (https://github.com/micjamking/Navigataur)
+  -- Navigataur (https://github.com/micjamking/Navigataur/)
+  -- Font Awesome (https://fortawesome.github.com/Font-Awesome/)
 Powered by:
   -- Jekyll
   -- Octopress

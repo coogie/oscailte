@@ -1,14 +1,2 @@
-$oscailte-assets: "..";
-
-$use-grids: true;
-$site-width: 1100px;
-$responsive: true;
-
-$use-gridfix: true;
-
-// $debug-mode: true;
-
-@import 'inuit_css/inuit';
 @import 'oscailte/oscailte';
-@import 'font-awesome/font-awesome';
- 
+@import 'oscailte/custom';
