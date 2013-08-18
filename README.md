@@ -9,7 +9,7 @@ Oscailte requires that you use Sass 3.2.9 (Media Mark) or greater, so you may ne
 You can install Oscailte like so:
 
     $ cd your_octopress_directory
-    $ git clone https://github.com/coogie/oscailte.git .themes/oscailte
+    $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte //The --recursive option is required to pull in inuitcss
     $ rake install['oscailte']
     $ bundle update //You may or may not need this, check note above
     $ rake generate
