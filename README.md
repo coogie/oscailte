@@ -5,13 +5,13 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
 ## Installation
 
 Oscailte requires that you use Sass 3.2.9 (Media Mark) or greater, so you may need to run a `bundle update` before you run your initial `rake generate` after installing the theme. You can check your current gem version by running `gem list sass` in your Octopress directory.
+Because Oscailte also uses git submodules to pull in inuitcss, when you run git clone you must add in the --recursive option in order to get it working.
 
 You can install Oscailte like so:
 
     $ cd your_octopress_directory
-    $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte //The --recursive option is required to pull in inuitcss
+    $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte
     $ rake install['oscailte']
-    $ bundle update //You may or may not need this, check note above
     $ rake generate
 
 ## Features
