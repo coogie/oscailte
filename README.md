@@ -14,6 +14,8 @@ You can install Oscailte like so:
     $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte
     $ rake install['oscailte']
     $ rake generate
+    
+Have problems when installing with zsh? Try `rake install\['oscailte'\]` instead.
 
 ## Features
 
