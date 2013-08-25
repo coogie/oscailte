@@ -50,6 +50,8 @@ social:
   youtube: 
 ````
 
+Oscailte only supports the above sites, but more may be (infinitely) added as the user sees fit.
+
 The colours for these are defined in `_variables.scss` as a key-value pair, with the key being used to create the class name. If you *do* add your own in and would like to colour it accordingly, you can create an entry in your own `_variables.scss` file. You can see the SCSS at work on [L#65 of `_social.scss`](https://github.com/coogie/oscailte/blob/master/sass/oscailte/aside/_social.scss#L65)
 
 
@@ -66,5 +68,3 @@ $sites:
   twitter #00a0d1,
   youtube #CC181E;
 ````
-
-Oscailte only supports the above sites, but more may be (infinitely) added as the user sees fit.
