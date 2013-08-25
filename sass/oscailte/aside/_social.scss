@@ -10,6 +10,7 @@
     background-color: darken($site-background, 5%);
     border: 1px solid darken($site-background, 10%);
     border-radius: 4px;
+    color: #222;
     display: inline-block;
     font-size: 0.8em;
     margin-bottom: 7px;
@@ -39,7 +40,7 @@
     }
 
     &::before {
-      background-color: #D62121;
+      background-color: #222;
       border-radius: 4px;
       content: "";
       height: 1px;
