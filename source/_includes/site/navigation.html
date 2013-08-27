@@ -1,6 +1,3 @@
 <input type="checkbox" id="toggle">
 <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu"></label>
-<ul class="menu pull-right">
-  <li><a href="{{ root_url }}/">Home</a></li>
-  <li><a href="{{ root_url }}/blog/">Blog</a></li>
-</ul>
+{% include custom/navigation.html %}
