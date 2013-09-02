@@ -6,17 +6,44 @@ article {
     @extend .clearfix;
     border-left: 2px solid $primary-color;
     color: lighten($text-color, 15%);
+    font-family: $serif;
     font-size: 1.25em;
     font-style: italic;
     padding-left: 15px;
 
     footer {
       float: right;
+      font-family: $sans-serif;
       font-size: 0.8em;
       strong::after {
         content: " \2014 ";
       }
+      a {
+        text-decoration: underline;
+      }
     }
+  }
+
+  .pullquote-left::before, .pullquote-right::before {
+    @media only screen and (max-width: $palm-end){
+      border-top:    1px dotted $primary-color;
+      border-bottom: 1px dotted $primary-color;
+      padding: 0 10px;
+      width: 100%;
+    }
+    border: medium none;
+    color: $primary-color;
+    content: "\201C" attr(data-pullquote) "\201D";
+    float: right;
+    font-family: $serif;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.45em;
+    margin: 0.3em 0 1em 1.5em;
+    padding: 0;
+    position: relative;
+      top: 7px;
+    width: 45%;
   }
 
   .tags {
