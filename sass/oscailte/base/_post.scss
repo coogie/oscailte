@@ -2,6 +2,23 @@ $meta-color: lighten($text-color, 20%);
 
 article {
 
+  blockquote {
+    @extend .clearfix;
+    border-left: 2px solid $primary-color;
+    color: lighten($text-color, 15%);
+    font-size: 1.25em;
+    font-style: italic;
+    padding-left: 15px;
+
+    footer {
+      float: right;
+      font-size: 0.8em;
+      strong::after {
+        content: " \2014 ";
+      }
+    }
+  }
+
   .tags {
     @extend .inline;
     display: inline;
