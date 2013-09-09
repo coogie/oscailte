@@ -68,3 +68,15 @@ $sites:
   twitter #00a0d1,
   youtube #CC181E;
 ````
+
+### Tag Cloud in the side bar
+
+To generate a tag cloud in the sidebar, install the octapress-tagcloud plugin by 
+```` scss
+cd <your_octopress_directory>;
+wget -P ./plugins/ https://raw.github.com/tokkonopapa/octopress-tagcloud/master/plugins/tag_cloud.rb 
+````
+Add ````custom/asides/tag_cloud.html```` to your default_asides in _config.yml
+
+regenerate and deploy ! 
+
