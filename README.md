@@ -24,10 +24,10 @@ Have problems when installing with zsh? Try `rake install\['oscailte'\]` instead
 Oscailte includes a clean page, separated from the blogging capabilities of Octopress. The theme can be modified to instead use just the blog index as the homepage.
 
 You can modify the default 'Lore Ipsum' text on the homepage by editing the following files located in source\_includes\custom:
-	welcome.html
-	grid_item_left.html
-	grid_item_middle.html
-	grid_item_right.html
+*	welcome.html
+*	grid_item_left.html
+*	grid_item_middle.html
+*	grid_item_right.html
 	
 ### Gravatar
 
