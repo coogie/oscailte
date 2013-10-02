@@ -7,11 +7,11 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
 ## Quicklinks
   - [Installation](#installation)
   - [Features](#features)
-    - [Homepage](Homepage)
-    - [Gravatar](Gravatar)
-    - [Social sidebar](Social Sidebar)
-  - [Customising Oscailte](Customising Oscailte)
-    - [Site colours](Site colours)
+    - [Homepage](#homepage)
+    - [Gravatar](#gravatar)
+    - [Social sidebar](#social-sidebar)
+  - [Customising Oscailte](#customising-oscailte)
+    - [Site colours](#site-colours)
     - [Using the Blog as the Homepage](#using-the-blog-as-the-homepage)
 
 ## Installation
