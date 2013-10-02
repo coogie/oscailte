@@ -5,14 +5,14 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
 ![Oscailte Preview](http://i.imgur.com/0GlIXHW.jpg)
 
 ## Quicklinks
-  - [#installation](Installation)
-  - [#features](Features)
-    - [#homepage](Homepage)
-    - [#gravatar](Gravatar)
-    - [#social-sidebar](Social Sidebar)
-  - [#customising-oscailte](Customising Oscailte)
-    - [#site-colours](Site colours)
-    - [#using-the-blog-as-the-homepage](Using the Blog as the Homepage)
+  - [Installation](#installation)
+  - [Features](#features)
+    - [Homepage](Homepage)
+    - [Gravatar](Gravatar)
+    - [Social sidebar](Social Sidebar)
+  - [Customising Oscailte](Customising Oscailte)
+    - [Site colours](Site colours)
+    - [Using the Blog as the Homepage](#using-the-blog-as-the-homepage)
 
 ## Installation
 
