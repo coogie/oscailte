@@ -9,9 +9,10 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
   - [Features](#features)
     - [Homepage](#homepage)
     - [Gravatar](#gravatar)
-    - [Social sidebar](#social-sidebar)
+    - [Social Sidebar](#social-sidebar)
   - [Customising Oscailte](#customising-oscailte)
-    - [Site colours](#site-colours)
+    - [Site Colours](#site-colours)
+    - [Default Dummy Text](#default-dummy-text)
     - [Using the Blog as the Homepage](#using-the-blog-as-the-homepage)
 
 ## Installation
@@ -40,7 +41,7 @@ Oscailte includes a clean page, separated from the blogging capabilities of Octo
 While excerpts are not necessarily a theme feature, Oscailte contains styling to support them. In order to use excerpts on your site simply insert `<!-- more -->` somewhere inside your post content to trigger the break.
 
 ![Excerpt Preview](http://i.imgur.com/Hlk0Nqh.png)
-
+	
 ### Gravatar
 
 Oscailte makes use of the `site.email` used in `_config.yml` (if present) to grab and display your Gravatar if you use one. Otherwise, the theme will instead display the default Gravatar logo, which can be changed by replacing the file locally.
@@ -89,9 +90,17 @@ $sites:
 
 ## Customising Oscailte
 
-### Site colours
+### Site Colours
 
 Many of the colours used throughout Oscailte can be fully customised and found within [`_variables.scss`](https://github.com/coogie/oscailte/blob/master/sass/oscailte/_variables.scss).
+
+### Default Dummy Text
+
+You can modify the default 'Lorem Ipsum' text on the homepage by editing the following files located in `source\_includes\custom`:
+* welcome.html
+* grid_item_left.html
+* grid_item_middle.html
+* grid_item_right.html
 
 ### Using the Blog as the Homepage
 
