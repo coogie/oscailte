@@ -108,7 +108,7 @@ By default, Oscailte comes with a homepage separate from the blogging capabiliti
 
     $ cp source/blog/index.html source/index.html
 
-This will overwrite the default index with the contents of the Blog index. **Be sure to update your [`source/custom/navigation.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/navigation.html) file.**
+This will overwrite the default index with the contents of the Blog index. **Be sure to update your [`source/_includes/custom/navigation.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/navigation.html) file.**
 
 
 
