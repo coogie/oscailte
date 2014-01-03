@@ -10,6 +10,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Homepage](#homepage)
     - [Gravatar](#gravatar)
     - [Social Sidebar](#social-sidebar)
+    - [Facebook Open Graph](#facebook-open-graph)
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
@@ -27,7 +28,7 @@ You can install Oscailte like so:
     $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte
     $ rake install['oscailte']
     $ rake generate
-    
+
 Having problems when installing with zsh? Try `rake install\['oscailte'\]` instead.
 
 ## Features
@@ -41,7 +42,7 @@ Oscailte includes a clean page, separated from the blogging capabilities of Octo
 While excerpts are not necessarily a theme feature, Oscailte contains styling to support them. In order to use excerpts on your site simply insert `<!-- more -->` somewhere inside your post content to trigger the break.
 
 ![Excerpt Preview](http://i.imgur.com/Hlk0Nqh.png)
-	
+
 ### Gravatar
 
 Oscailte makes use of the `site.email` used in `_config.yml` (if present) to grab and display your Gravatar if you use one. Otherwise, the theme will instead display the default Gravatar logo, which can be changed by replacing the file locally.
@@ -55,18 +56,19 @@ Oscailte allows you to display links to your other online profiles in a quick an
 (Oscailte *does not* make use of the default `github_user` and `twitter_user` keys)
 
 ```` yml
+...
 social:
   title: # Defaults to "Follow me!" if not present
   adn: # App.net
-  dribbble: 
-  facebook: 
-  github: 
-  googleplus: 
-  linkedin: 
-  pinterest: 
-  stackoverflow: 
-  twitter: 
-  youtube: 
+  dribbble:
+  facebook:
+  github:
+  googleplus:
+  linkedin:
+  pinterest:
+  stackoverflow:
+  twitter:
+  youtube:
 ````
 
 Oscailte supports the above sites out of the box, but more may be (infinitely) added as the user sees fit.
@@ -75,7 +77,8 @@ The colours for these are defined in `_variables.scss` as a key-value pair, with
 
 
 ```` scss
-$sites: 
+...
+$sites:
   adn #4A484C,
   dribbble #EA4C89,
   facebook #3B5998,
@@ -87,6 +90,20 @@ $sites:
   twitter #00a0d1,
   youtube #CC181E;
 ````
+
+### Facebook Open Graph
+
+![Imgur](http://i.imgur.com/iLDBoFV.png)
+
+Oscailte supports the use of Facebook Open Graph metadata to give that little *umph* when somebody shares a link to your site on somebody's Facebook timeline/wall. To enable this, you first must add the following to your `_config.yml` file:
+
+``` yml
+...
+facebook_app_id: xxxxxxxxxx
+```
+
+If you don't know how to get an App ID, you can pick on up by going to the [Insights Dashboard](https://www.facebook.com/insights/) and clicking the green button in the top-right that reads "Insights for your website". The App ID can be found in the modal that appears on the page. **Make sure you add the App ID to your Octopress site, compile, and push to your hosting before proceeding with the modal on Facebook.**
+
 
 ## Customising Oscailte
 
