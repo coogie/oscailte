@@ -135,7 +135,7 @@ facebook:
  - If `site.social.facebook` has been set, **og:author** will associate the post/page with that user.
  - If `facebook.image` has been set in the post/page's own YML file, **og:image** will use its value as an image for that particular page/post
 
-Big thanks to @zclancy's post, "[Twitter Cards, Facebook Open Graph, and Octopress](http://blackglasses.me/2013/09/19/twitter-cards-facebook-open-graph-and-octopress/)" from which I ~~stole~~ referenced the code! ;)
+Big thanks to [@zclancy](https://github.com/zclancy)'s post, "[Twitter Cards, Facebook Open Graph, and Octopress](http://blackglasses.me/2013/09/19/twitter-cards-facebook-open-graph-and-octopress/)" from which I ~~stole~~ referenced the code! ;)
 
 ## Customising Oscailte
 
