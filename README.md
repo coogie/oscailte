@@ -10,6 +10,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Homepage](#homepage)
     - [Gravatar](#gravatar)
     - [Social Sidebar](#social-sidebar)
+    - [Facebook Open Graph](#facebook-open-graph)
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
@@ -27,7 +28,7 @@ You can install Oscailte like so:
     $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte
     $ rake install['oscailte']
     $ rake generate
-    
+
 Having problems when installing with zsh? Try `rake install\['oscailte'\]` instead.
 
 ## Features
@@ -41,7 +42,7 @@ Oscailte includes a clean page, separated from the blogging capabilities of Octo
 While excerpts are not necessarily a theme feature, Oscailte contains styling to support them. In order to use excerpts on your site simply insert `<!-- more -->` somewhere inside your post content to trigger the break.
 
 ![Excerpt Preview](http://i.imgur.com/Hlk0Nqh.png)
-	
+
 ### Gravatar
 
 Oscailte makes use of the `site.email` used in `_config.yml` (if present) to grab and display your Gravatar if you use one. Otherwise, the theme will instead display the default Gravatar logo, which can be changed by replacing the file locally.
@@ -55,18 +56,19 @@ Oscailte allows you to display links to your other online profiles in a quick an
 (Oscailte *does not* make use of the default `github_user` and `twitter_user` keys)
 
 ```` yml
+...
 social:
   title: # Defaults to "Follow me!" if not present
   adn: # App.net
-  dribbble: 
-  facebook: 
-  github: 
-  googleplus: 
-  linkedin: 
-  pinterest: 
-  stackoverflow: 
-  twitter: 
-  youtube: 
+  dribbble:
+  facebook:
+  github:
+  googleplus:
+  linkedin:
+  pinterest:
+  stackoverflow:
+  twitter:
+  youtube:
 ````
 
 Oscailte supports the above sites out of the box, but more may be (infinitely) added as the user sees fit.
@@ -75,7 +77,8 @@ The colours for these are defined in `_variables.scss` as a key-value pair, with
 
 
 ```` scss
-$sites: 
+...
+$sites:
   adn #4A484C,
   dribbble #EA4C89,
   facebook #3B5998,
@@ -87,6 +90,45 @@ $sites:
   twitter #00a0d1,
   youtube #CC181E;
 ````
+
+### Facebook Open Graph
+
+![Imgur](http://i.imgur.com/iLDBoFV.png)
+
+Oscailte supports the use of Facebook Open Graph metadata to give that little *umph* when somebody shares a link to your site on somebody's Facebook timeline/wall. To enable this, you must first add the following to your `_config.yml` file:
+
+``` yml
+...
+facebook_app_id: xxxxxxxxxx
+```
+
+If you don't know how to get an App ID, you can pick one up by going to the [Insights Dashboard](https://www.facebook.com/insights/) and clicking the green button in the top-right that reads "Insights for your website". The App ID can be found in the modal that appears on the page. **Make sure you add the App ID to your Octopress site, compile, and push to your hosting before proceeding with the modal on Facebook.**
+
+Some optional, yet useful options are also available to use on a per-page/post basis
+
+``` yml
+---
+layout: post
+title: "Example Post Title"
+date: 2014-02-18 11:35:55 +0000
+comments: true
+categories: [category 1, category 2]
+
+# Provide an image thumbnail for Facebook OpenGraph
+facebook:
+  image: http://yoursite.com/image.jpg
+
+---
+```
+
+ - **og:title** will try to use the `post.title`, falling back to `page.title`, and then finally `site.title`
+ - **og:site_name** uses the value of `site.title`
+ - **og:url** will use the canonical link for the page, falling back to `site.url`
+ - **og:description** will attempt to use the `description` from the post/page's own YML file, falling back to use `content | raw_content` if it doesn't exist.
+ - If `site.social.facebook` has been set, **og:author** will associate the post/page with that user.
+ - If `facebook.image` has been set in the post/page's own YML file, **og:image** will use its value as an image for that particular page/post
+
+Big thanks to @zclancy's post, "[Twitter Cards, Facebook Open Graph, and Octopress](http://blackglasses.me/2013/09/19/twitter-cards-facebook-open-graph-and-octopress/)" from which I ~~stole~~ referenced the code! ;)
 
 ## Customising Oscailte
 
