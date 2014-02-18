@@ -19,9 +19,7 @@
     <meta property="og:title" content="{% if post.title %}{{ post.title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:url" content="{% if canonical %}{{ canonical }}{% else %}{{ site.url }}{% endif %}/">
-    {% if post.description %}
-      {% capture fb_description %}{{ post.description }}{% endcapture %}
-    {% elsif page.description %}
+    {% if page.description %}
       {% capture fb_description %}{{ page.description }}{% endcapture %}
     {% else %}
       {% capture fb_description %}{{ content | raw_content }}{% endcapture %}
