@@ -102,8 +102,9 @@ Oscailte supports the use of Facebook Open Graph metadata to give that little *u
 facebook_app_id: xxxxxxxxxx
 ```
 
-If you don't know how to get an App ID, you can pick on up by going to the [Insights Dashboard](https://www.facebook.com/insights/) and clicking the green button in the top-right that reads "Insights for your website". The App ID can be found in the modal that appears on the page. **Make sure you add the App ID to your Octopress site, compile, and push to your hosting before proceeding with the modal on Facebook.**
+If you don't know how to get an App ID, you can pick one up by going to the [Insights Dashboard](https://www.facebook.com/insights/) and clicking the green button in the top-right that reads "Insights for your website". The App ID can be found in the modal that appears on the page. **Make sure you add the App ID to your Octopress site, compile, and push to your hosting before proceeding with the modal on Facebook.**
 
+Big thanks to @zclancy's post, "[Twitter Cards, Facebook Open Graph, and Octopress](http://blackglasses.me/2013/09/19/twitter-cards-facebook-open-graph-and-octopress/)" from which I ~~stole~~ referenced the code! ;)
 
 ## Customising Oscailte
 
