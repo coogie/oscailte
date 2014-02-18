@@ -1,5 +1,12 @@
 # Oscailte &mdash; An Octopress theme
 
+---
+## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
+ - **Date:** `2014/02/18`
+ - **Feature**: [Facebook OpenGraph Metadata](https://github.com/coogie/oscailte/pull/39)
+
+---
+
 Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation)) is a light and clean theme, built using [inuit.css](http://inuitcss.com/), for use on [Octopress](http://octopress.org/) sites. The theme can be viewed in action on [my personal site](http://coog.ie/).
 
 ![Oscailte Preview](http://i.imgur.com/0GlIXHW.jpg)
