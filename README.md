@@ -104,6 +104,30 @@ facebook_app_id: xxxxxxxxxx
 
 If you don't know how to get an App ID, you can pick one up by going to the [Insights Dashboard](https://www.facebook.com/insights/) and clicking the green button in the top-right that reads "Insights for your website". The App ID can be found in the modal that appears on the page. **Make sure you add the App ID to your Octopress site, compile, and push to your hosting before proceeding with the modal on Facebook.**
 
+Some optional, yet useful options are also available to use on a per-page/post basis
+
+``` yml
+---
+layout: post
+title: "Example Post Title"
+date: 2014-02-18 11:35:55 +0000
+comments: true
+categories: [category 1, category 2]
+
+# Provide an image thumbnail for Facebook OpenGraph
+facebook:
+  image: http://yoursite.com/image.jpg
+
+---
+```
+
+ - **og:title** will try to use the `post.title`, falling back to `page.title`, and then finally `site.title`
+ - **og:site_name** uses the value of `site.title`
+ - **og:url** will use the canonical link for the page, falling back to `site.url`
+ - **og:description** will attempt to use the `description` from the post/page's own YML file, falling back to use `content | raw_content` if it doesn't exist.
+ - If `site.social.facebook` has been set, **og:author** will associate the post/page with that user.
+ - If `facebook.image` has been set in the post/page's own YML file, **og:image** will use its value as an image for that particular page/post
+
 Big thanks to @zclancy's post, "[Twitter Cards, Facebook Open Graph, and Octopress](http://blackglasses.me/2013/09/19/twitter-cards-facebook-open-graph-and-octopress/)" from which I ~~stole~~ referenced the code! ;)
 
 ## Customising Oscailte
