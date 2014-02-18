@@ -95,7 +95,7 @@ $sites:
 
 ![Imgur](http://i.imgur.com/iLDBoFV.png)
 
-Oscailte supports the use of Facebook Open Graph metadata to give that little *umph* when somebody shares a link to your site on somebody's Facebook timeline/wall. To enable this, you first must add the following to your `_config.yml` file:
+Oscailte supports the use of Facebook Open Graph metadata to give that little *umph* when somebody shares a link to your site on somebody's Facebook timeline/wall. To enable this, you must first add the following to your `_config.yml` file:
 
 ``` yml
 ...
