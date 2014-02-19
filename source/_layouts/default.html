@@ -1,6 +1,4 @@
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-
-{% include site/head.html %}
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}{% include site/head.html %}
 
   <body {% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
 
@@ -23,9 +21,9 @@
         {% endif %}
 
           {{ content | expand_urls: root_url }}
-        
+
         </div>
-        
+
         {% unless page.sidebar == false %}
         <aside id="sidebar" class="grid__item one-third lap-one-whole palm-one-whole">
           {% include site/sidebar.html %}
@@ -33,7 +31,7 @@
         {% endunless %}
       </div>
     </div>
-    
+
     <footer>
       {% include site/footer.html %}
     </footer>
