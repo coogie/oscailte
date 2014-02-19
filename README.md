@@ -2,8 +2,9 @@
 
 ---
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
- - **Date:** `2014/02/18`
- - **Feature**: [Facebook OpenGraph Metadata](https://github.com/coogie/oscailte/pull/39)
+ - **Date:** `2014-02-19`
+ - **Feature:** [Facebook OpenGraph Metadata](https://github.com/coogie/oscailte/pull/39)
+ - **Bug(s):** [#42, Broken Category URLs](https://github.com/coogie/oscailte/pull/43)
 
 ---
 
