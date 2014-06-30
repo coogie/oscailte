@@ -22,6 +22,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
+    - [Default Icons on Homepage](#default-icons-on-homepage)
     - [Using the Blog as the Homepage](#using-the-blog-as-the-homepage)
 
 ## Installation
@@ -151,6 +152,17 @@ You can modify the default 'Lorem Ipsum' text on the homepage by editing the fol
 * grid_item_left.html
 * grid_item_middle.html
 * grid_item_right.html
+
+### Default Icons on Homepage
+You can modify and change the default icons which are above the grid items by editing the follownig file in `source` directroy:
+* index.html
+
+You can substitue the following class items with your [preferred ones](https://fortawesome.github.io/Font-Awesome/3.2.1/icons/) to change the left, middle, and right box, respectively.
+``` html
+<i class="icon-laptop"></i>
+<i class="icon-search"></i>
+<i class="icon-coffee"></i>
+```
 
 ### Using the Blog as the Homepage
 
