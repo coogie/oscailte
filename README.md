@@ -24,6 +24,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Default Dummy Text](#default-dummy-text)
     - [Default Icons on Homepage](#default-icons-on-homepage)
     - [Using the Blog as the Homepage](#using-the-blog-as-the-homepage)
+    - [Modifying the Image and Related Text on Homepage](modifying-the-image-and-related-text-on-homepage)
 
 ## Installation
 
@@ -173,4 +174,17 @@ By default, Oscailte comes with a homepage separate from the blogging capabiliti
 This will overwrite the default index with the contents of the Blog index. **Be sure to update your [`source/_includes/custom/navigation.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/navigation.html) file.**
 
 
+### Modifying the Image and Related Text on Homepage
+#### Modifying image
+By default, Oscailte uses `cliffs_of_moher.jpg` in `source/images` directroy. For changing it you can add your own image to `images` directroy and edit the following file
+* source/_includes/site/hero_unit.html
 
+and replace `cliffs_of_moher.jpg` with your own image.
+
+#### Modifying text
+For modifying text, replace the default
+``` html
+Cliffs of Moher, by <a href="http://www.flickr.com/photos/alfarese/2780612581/" target="_blank">Alessandro Farese</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank" class="licence"><small>(by-nc-nd)</small></a>
+
+```
+with your preferred text.
