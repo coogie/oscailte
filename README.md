@@ -22,7 +22,9 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
+    - [Default Icons on Homepage](#default-icons-on-homepage)
     - [Using the Blog as the Homepage](#using-the-blog-as-the-homepage)
+    - [Modifying the Image and Related Text on Homepage](#modifying-the-image-and-related-text-on-homepage)
 
 ## Installation
 
@@ -152,6 +154,17 @@ You can modify the default 'Lorem Ipsum' text on the homepage by editing the fol
 * grid_item_middle.html
 * grid_item_right.html
 
+### Default Icons on Homepage
+You can modify and change the default icons which are above the grid items by editing the follownig file in `source` directroy:
+* index.html
+
+You can substitue the following class items with your [preferred ones](https://fortawesome.github.io/Font-Awesome/3.2.1/icons/) to change the left, middle, and right box, respectively.
+``` html
+<i class="icon-laptop"></i>
+<i class="icon-search"></i>
+<i class="icon-coffee"></i>
+```
+
 ### Using the Blog as the Homepage
 
 By default, Oscailte comes with a homepage separate from the blogging capabilities. If you wish to use the Blog index as your default Hompage, you can run the following command from your root directory:
@@ -161,4 +174,17 @@ By default, Oscailte comes with a homepage separate from the blogging capabiliti
 This will overwrite the default index with the contents of the Blog index. **Be sure to update your [`source/_includes/custom/navigation.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/navigation.html) file.**
 
 
+### Modifying the Image and Related Text on Homepage
+#### Modifying image
+By default, Oscailte uses `cliffs_of_moher.jpg` in `source/images` directroy. For changing it you can add your own image to `images` directroy and edit the following file
+* source/_includes/site/hero_unit.html
 
+and replace `cliffs_of_moher.jpg` with your own image.
+
+#### Modifying text
+For modifying text, replace the default
+``` html
+Cliffs of Moher, by <a href="http://www.flickr.com/photos/alfarese/2780612581/" target="_blank">Alessandro Farese</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank" class="licence"><small>(by-nc-nd)</small></a>
+
+```
+with your preferred text.
