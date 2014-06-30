@@ -24,7 +24,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Default Dummy Text](#default-dummy-text)
     - [Default Icons on Homepage](#default-icons-on-homepage)
     - [Using the Blog as the Homepage](#using-the-blog-as-the-homepage)
-    - [Modifying the Image and Related Text on Homepage](modifying-the-image-and-related-text-on-homepage)
+    - [Modifying the Image and Related Text on Homepage](#modifying-the-image-and-related-text-on-homepage)
 
 ## Installation
 
