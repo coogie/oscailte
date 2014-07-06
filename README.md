@@ -2,9 +2,9 @@
 
 ---
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
- - **Date:** `2014-02-19`
- - **Feature:** [Facebook OpenGraph Metadata](https://github.com/coogie/oscailte/pull/39)
- - **Bug(s):** [#42, Broken Category URLs](https://github.com/coogie/oscailte/pull/43)
+ - **Date:** `2014-07-07`
+ - **Feature:** [Twitter Timeline Widget](https://github.com/coogie/oscailte/pull/47) (Thanks to @eToThePiIPower)
+ - **Bug(s):** [#45, Support {% img %} tag](https://github.com/coogie/oscailte/pull/45)
 
 ---
 
@@ -153,9 +153,9 @@ facebook:
 
 Big thanks to [@zclancy](https://github.com/zclancy)'s post, "[Twitter Cards, Facebook Open Graph, and Octopress](http://blackglasses.me/2013/09/19/twitter-cards-facebook-open-graph-and-octopress/)" from which I ~~stole~~ referenced the code! ;)
 
-### Twitter Timeline Aside
+### Twitter Timeline Aside ([Preview](http://i.imgur.com/ofdupZj.png))
 
-Since the release of v1.1 of the Twitter API, Twitter removed support for unauthenticated API calls. ![Imgur](http://i.imgur.com/ofdupZj.png)
+Since the release of v1.1 of the Twitter API, Twitter removed support for unauthenticated API calls.
 Twitter does, however, offer a widget that integrates well with blogging platforms - including Octopress.
 
 To get started, head over to Twitter's [Widgets Configurator](https://twitter.com/settings/widgets/new) page and create a new Widget. Next, copy the code and look for `data-widget-id="xxxxxxxxxxxx"`.
