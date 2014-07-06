@@ -8,7 +8,7 @@
 
 ---
 
-Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation) Gaeilge for "Open") is a light and clean theme, built using [inuit.css](http://inuitcss.com/), for use on [Octopress](http://octopress.org/) sites and released undert the MIT Licence.
+Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation) Gaeilge for "Open") is a light and clean theme, built using [inuit.css](http://inuitcss.com/), for use on [Octopress](http://octopress.org/) sites and released under the MIT Licence.
 
 ![Oscailte Preview](http://i.imgur.com/0GlIXHW.jpg)
 
@@ -112,9 +112,7 @@ $sites:
   youtube #CC181E;
 ````
 
-### Facebook Open Graph
-
-![Imgur](http://i.imgur.com/iLDBoFV.png)
+### Facebook Open Graph ([Preview](http://i.imgur.com/iLDBoFV.png))
 
 Oscailte supports the use of Facebook Open Graph metadata to give that little *umph* when somebody shares a link to your site on somebody's Facebook timeline/wall. To enable this, you must first add the following to your `_config.yml` file:
 
@@ -213,15 +211,15 @@ This will overwrite the default index with the contents of the Blog index. **Be 
 
 ### Modifying the Image and Related Text on Homepage
 #### Modifying image
-By default, Oscailte uses `cliffs_of_moher.jpg` in `source/images` directory. For changing it you can add your own image to `images` directroy and edit the following file
+By default, Oscailte uses `cliffs_of_moher.jpg` in the `source/images` directory. If you wish to change it, you can add your own image to the `source/images` directory and then edit the following file
 * source/_includes/site/hero_unit.html
 
 and replace `cliffs_of_moher.jpg` with your own image.
 
 #### Modifying text
-For modifying text, replace the default
+For modifying the text, you can replace the following with your preferred text, or remove it entirely:
+
 ``` html
 Cliffs of Moher, by <a href="http://www.flickr.com/photos/alfarese/2780612581/" target="_blank">Alessandro Farese</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank" class="licence"><small>(by-nc-nd)</small></a>
 
 ```
-with your preferred text.
