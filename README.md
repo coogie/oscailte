@@ -36,7 +36,7 @@ Because Oscailte also uses git submodules to pull in inuitcss, when you run git 
 You can install Oscailte like so:
 
     $ cd your_octopress_directory
-    $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte
+    $ git clone --recursive -b master https://github.com/coogie/oscailte.git .themes/oscailte
     $ rake install['oscailte']
     $ rake generate
 
