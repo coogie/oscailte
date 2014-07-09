@@ -107,10 +107,32 @@ article {
       border-bottom: 1px solid $primary-color;
       margin-bottom: 20px;
     }
-    img {
-      border: 5px solid #fff;
-      border-radius: 3px;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  }
+  img, .caption-wrapper {
+    border: 5px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    &.right {
+      float: right;
+      margin: 0 0 10px 20px;
+    }
+    &.left {
+      float: left;
+      margin: 0 20px 10px;
+    }
+    &.caption {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  .caption-wrapper {
+    display: inline-block;
+    margin-bottom: 10px;
+    .caption-text {
+      background: #fff;
+      text-align: center;
+      font-size: .8em;
+      color: #666;
+      display: block;
       &.right {
         float: right;
         margin: 0 0 10px 20px;

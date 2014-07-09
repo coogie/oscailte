@@ -20,6 +20,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Social Sidebar](#social-sidebar)
     - [Facebook Open Graph](##facebook-open-graph-preview)
     - [Twitter Timeline Aside](#twitter-timeline-aside-preview)
+    - [Image Captions](#image-captions-preview)
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
@@ -174,6 +175,71 @@ Next, modify your `default_asides` within your `_config.yml` to include the Twit
 ```
 default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.html]
 ```
+### Image Captions ([Preview](http://i.imgur.com/OVjJlIU.png))
+
+If you ever wanted to add captions to your images, now you can. Stylesheet support for the `{% imgcap %}` tag has been added to Oscailte!
+It works with `left` and `right` too! Most of this code is courtesy of
+[Robert Anderson](http://blog.zerosharp.com/image-captions-for-octopress/) excellent blog post and
+[Ted Kulp's](https://github.com/imathis/octopress/issues/124) suggestions in the Octopress issues.
+#### Adding the Image Caption plugin
+
+Since Jekyll\Liquid plugins are part of Octopress core and not the theme, you'll need to manually add the image caption plugin (at least
+until it is added to Octopress core). Create the image_caption_tag.rb file in the plugins folder:
+```
+# Title: Image tag with caption for Jekyll
+# Description: Easily output images with captions
+
+module Jekyll
+
+  class CaptionImageTag < Liquid::Tag
+    @img = nil
+    @title = nil
+    @class = ''
+    @width = ''
+    @height = ''
+
+    def initialize(tag_name, markup, tokens)
+      if markup =~ /(\S.*\s+)?(https?:\/\/|\/)(\S+)(\s+\d+\s+\d+)?(\s+.+)?/i
+        @class = $1 || ''
+        @img = $2 + $3
+        if $5
+          @title = $5.strip
+        end
+        if $4 =~ /\s*(\d+)\s+(\d+)/
+          @width = $1
+          @height = $2
+        end
+      end
+      super
+    end
+
+    def render(context)
+      output = super
+      if @img
+        "<span class='#{('caption-wrapper ' + @class).rstrip}'>" +
+          "<img class='caption' src='#{@img}' width='#{@width}' height='#{@height}' title='#{@title}'>" +
+          "<span class='caption-text'>#{@title}</span>" +
+        "</span>"
+      else
+        "Error processing input, expected syntax: {% img [class name(s)] /url/to/image [width height] [title text] %}"
+      end
+    end
+  end
+end
+
+Liquid::Template.register_tag('imgcap', Jekyll::CaptionImageTag)
+```
+#### Using Image Captions
+Using the image caption tag is similar to using the standard image tag. A basic captioned image can be added by:
+
+`{% imgcap path_to_image "Text of caption" %}`
+
+You can use `left` and `right`, and customize the height/width as well:
+
+`{% imgcap left path_to_image width height "Text of Caption" %}`
+
+The current version if the image caption plugin uses the same text for the caption and the title (mouseover), and doesn't
+support alt text.
 
 ## Customising Oscailte
 
