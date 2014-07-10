@@ -2,9 +2,9 @@
 
 ---
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
- - **Date:** `2014-07-07`
+ - **Date:** `2014-07-11`
  - **Feature:** [Twitter Timeline Widget](https://github.com/coogie/oscailte/pull/47) (Thanks to @eToThePiIPower)
- - **Bug(s):** [#45, Support {% img %} tag](https://github.com/coogie/oscailte/pull/45)
+ - **Bug(s):** #50, "{% img %} tag doesn't support pages, only posts"
 
 ---
 
