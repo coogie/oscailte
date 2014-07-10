@@ -38,3 +38,20 @@ a {
   clear: both;
   margin: 2em 0;
 }
+
+article.post,
+article.page {
+  img {
+    border: 5px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    &.right {
+      float: right;
+      margin: 0 0 10px 20px;
+    }
+    &.left {
+      float: left;
+      margin: 0 20px 10px 0;
+    }
+  }
+}
