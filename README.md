@@ -2,9 +2,8 @@
 
 ---
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
- - **Date:** `2014-07-07`
- - **Feature:** [Twitter Timeline Widget](https://github.com/coogie/oscailte/pull/47) (Thanks to @eToThePiIPower)
- - **Bug(s):** [#45, Support {% img %} tag](https://github.com/coogie/oscailte/pull/45)
+ - **Date:** `2014-08-03`
+ - **Bug(s):** [#52, Theme not displaying posts on Blog Index](https://github.com/coogie/oscailte/pull/52)
 
 ---
 
