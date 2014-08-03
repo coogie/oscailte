@@ -4,6 +4,7 @@
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
  - **Date:** `2014-08-03`
  - **Bug(s):** [#52, Theme not displaying posts on Blog Index](https://github.com/coogie/oscailte/pull/52)
+
 ---
 
 Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation) Gaeilge for "Open") is a light and clean theme, built using [inuit.css](http://inuitcss.com/), for use on [Octopress](http://octopress.org/) sites and released under the MIT Licence.
