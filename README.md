@@ -3,7 +3,9 @@
 ---
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
  - **Date:** `2014-08-03`
- - **Bug(s):** [#52, Theme not displaying posts on Blog Index](https://github.com/coogie/oscailte/pull/52)
+ - **Bug(s):**
+   - [#50, {% img %} tag doesn't support pages, only posts](https://github.com/coogie/oscailte/pull/50)
+   - [#52, Theme not displaying posts on Blog Index](https://github.com/coogie/oscailte/pull/52)
 
 ---
 
