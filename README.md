@@ -2,9 +2,10 @@
 
 ---
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
- - **Date:** `2014-07-07`
- - **Feature:** [Twitter Timeline Widget](https://github.com/coogie/oscailte/pull/47) (Thanks to @eToThePiIPower)
- - **Bug(s):** [#45, Support {% img %} tag](https://github.com/coogie/oscailte/pull/45)
+ - **Date:** `2014-08-03`
+ - **Bug(s):**
+   - [#50, {% img %} tag doesn't support pages, only posts](https://github.com/coogie/oscailte/pull/50)
+   - [#52, Theme not displaying posts on Blog Index](https://github.com/coogie/oscailte/pull/52)
 
 ---
 
@@ -41,6 +42,11 @@ You can install Oscailte like so:
     $ rake generate
 
 Having problems when installing with zsh? Try `rake install\['oscailte'\]` instead.
+
+**Attention!**
+With the recent updates to Octopress to support Jekyll 2, if you are using the latest version of Octopress 2 (after June 21st, 2014), the `paginate_path` setting needs to be updated in your `_config.yml` file:
+
+    paginate_path: "blog/:num"
 
 ## Features
 
