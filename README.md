@@ -42,6 +42,11 @@ You can install Oscailte like so:
 
 Having problems when installing with zsh? Try `rake install\['oscailte'\]` instead.
 
+**Attention!**
+With the recent updates to Octopress to support Jekyll 2, if you are using the latest version of Octopress 2 (after June 21st, 2014), the `paginate_path` setting needs to be updated in your `_config.yml` file:
+
+    paginate_path: "blog/:num"
+
 ## Features
 
 ### Homepage
