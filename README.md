@@ -2,13 +2,14 @@
 
 ---
 ## ![Attention](http://i.imgur.com/iBbFfJH.png) Oscailte's last update was
- - **Date:** `2014-02-19`
- - **Feature:** [Facebook OpenGraph Metadata](https://github.com/coogie/oscailte/pull/39)
- - **Bug(s):** [#42, Broken Category URLs](https://github.com/coogie/oscailte/pull/43)
+ - **Date:** `2014-08-03`
+ - **Bug(s):**
+   - [#50, {% img %} tag doesn't support pages, only posts](https://github.com/coogie/oscailte/pull/50)
+   - [#52, Theme not displaying posts on Blog Index](https://github.com/coogie/oscailte/pull/52)
 
 ---
 
-Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation)) is a light and clean theme, built using [inuit.css](http://inuitcss.com/), for use on [Octopress](http://octopress.org/) sites. The theme can be viewed in action on [my personal site](http://coog.ie/).
+Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation) Gaeilge for "Open") is a light and clean theme, built using [inuit.css](http://inuitcss.com/), for use on [Octopress](http://octopress.org/) sites and released under the MIT Licence.
 
 ![Oscailte Preview](http://i.imgur.com/0GlIXHW.jpg)
 
@@ -18,7 +19,8 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Homepage](#homepage)
     - [Gravatar](#gravatar)
     - [Social Sidebar](#social-sidebar)
-    - [Facebook Open Graph](#facebook-open-graph)
+    - [Facebook Open Graph](##facebook-open-graph-preview)
+    - [Twitter Timeline Aside](#twitter-timeline-aside-preview)
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
@@ -35,11 +37,16 @@ Because Oscailte also uses git submodules to pull in inuitcss, when you run git 
 You can install Oscailte like so:
 
     $ cd your_octopress_directory
-    $ git clone --recursive https://github.com/coogie/oscailte.git .themes/oscailte
+    $ git clone --recursive -b master https://github.com/coogie/oscailte.git .themes/oscailte
     $ rake install['oscailte']
     $ rake generate
 
 Having problems when installing with zsh? Try `rake install\['oscailte'\]` instead.
+
+**Attention!**
+With the recent updates to Octopress to support Jekyll 2, if you are using the latest version of Octopress 2 (after June 21st, 2014), the `paginate_path` setting needs to be updated in your `_config.yml` file:
+
+    paginate_path: "blog/:num"
 
 ## Features
 
@@ -62,6 +69,7 @@ If you wish to make use of the Gravatar feature, please ensure you use an email 
 ### Social Sidebar
 
 Oscailte allows you to display links to your other online profiles in a quick and easy fashion. To display the sidebar links to your other profiles, you must add the following to your `_config.yml` file.
+Please note that these are only required if you wish to display items such as Social Sidebar, Github Repos, Twitter Timeline, and [Facebook OpenGraph Metadata](#facebook-open-graph).
 
 (Oscailte *does not* make use of the default `github_user` and `twitter_user` keys)
 
@@ -72,12 +80,21 @@ social:
   adn: # App.net
   dribbble:
   facebook:
+    user:
+    app_id:
   github:
+    user:
+    show_profile_link:
   googleplus:
   linkedin:
   pinterest:
   stackoverflow:
   twitter:
+    user:
+    widget:
+      is_shown:
+      show_profile_link:
+      widget_id:
   youtube:
 ````
 
@@ -101,15 +118,15 @@ $sites:
   youtube #CC181E;
 ````
 
-### Facebook Open Graph
-
-![Imgur](http://i.imgur.com/iLDBoFV.png)
+### Facebook Open Graph ([Preview](http://i.imgur.com/iLDBoFV.png))
 
 Oscailte supports the use of Facebook Open Graph metadata to give that little *umph* when somebody shares a link to your site on somebody's Facebook timeline/wall. To enable this, you must first add the following to your `_config.yml` file:
 
 ``` yml
 ...
-facebook_app_id: xxxxxxxxxx
+social:
+  facebook:
+    app_id: xxxxxxxxxx
 ```
 
 If you don't know how to get an App ID, you can pick one up by going to the [Insights Dashboard](https://www.facebook.com/insights/) and clicking the green button in the top-right that reads "Insights for your website". The App ID can be found in the modal that appears on the page. **Make sure you add the App ID to your Octopress site, compile, and push to your hosting before proceeding with the modal on Facebook.**
@@ -140,6 +157,30 @@ facebook:
 
 Big thanks to [@zclancy](https://github.com/zclancy)'s post, "[Twitter Cards, Facebook Open Graph, and Octopress](http://blackglasses.me/2013/09/19/twitter-cards-facebook-open-graph-and-octopress/)" from which I ~~stole~~ referenced the code! ;)
 
+### Twitter Timeline Aside ([Preview](http://i.imgur.com/ofdupZj.png))
+
+Since the release of v1.1 of the Twitter API, Twitter removed support for unauthenticated API calls.
+Twitter does, however, offer a widget that integrates well with blogging platforms - including Octopress.
+
+To get started, head over to Twitter's [Widgets Configurator](https://twitter.com/settings/widgets/new) page and create a new Widget. Next, copy the code and look for `data-widget-id="xxxxxxxxxxxx"`.
+Copy this widget ID and then update the `social` settings for Oscailte.
+
+```yml
+social:
+  twitter:
+    user: username
+    widget:
+      is_shown: true
+      show_profile_link: true
+      widget_id: xxxxxxxxxxxx
+```
+
+Next, modify your `default_asides` within your `_config.yml` to include the Twitter Aside and you're good to go!
+
+```
+default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.html]
+```
+
 ## Customising Oscailte
 
 ### Site Colours
@@ -155,10 +196,10 @@ You can modify the default 'Lorem Ipsum' text on the homepage by editing the fol
 * grid_item_right.html
 
 ### Default Icons on Homepage
-You can modify and change the default icons which are above the grid items by editing the follownig file in `source` directroy:
+You can modify and change the default icons which are above the grid items by editing the following file in the `source` directory:
 * index.html
 
-You can substitue the following class items with your [preferred ones](https://fortawesome.github.io/Font-Awesome/3.2.1/icons/) to change the left, middle, and right box, respectively.
+You can edit the following class names with your [preferred ones](https://fortawesome.github.io/Font-Awesome/3.2.1/icons/) to change the left, middle, and right icons respectively.
 ``` html
 <i class="icon-laptop"></i>
 <i class="icon-search"></i>
@@ -176,15 +217,15 @@ This will overwrite the default index with the contents of the Blog index. **Be 
 
 ### Modifying the Image and Related Text on Homepage
 #### Modifying image
-By default, Oscailte uses `cliffs_of_moher.jpg` in `source/images` directroy. For changing it you can add your own image to `images` directroy and edit the following file
+By default, Oscailte uses `cliffs_of_moher.jpg` in the `source/images` directory. If you wish to change it, you can add your own image to the `source/images` directory and then edit the following file
 * source/_includes/site/hero_unit.html
 
 and replace `cliffs_of_moher.jpg` with your own image.
 
 #### Modifying text
-For modifying text, replace the default
+For modifying the text, you can replace the following with your preferred text, or remove it entirely:
+
 ``` html
 Cliffs of Moher, by <a href="http://www.flickr.com/photos/alfarese/2780612581/" target="_blank">Alessandro Farese</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank" class="licence"><small>(by-nc-nd)</small></a>
 
 ```
-with your preferred text.
