@@ -1,28 +1,52 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
-@import "../inuitcss/_inuit";
-@import "../fontawesome/font-awesome";
+// BASE
+// ====
+@import 'base/normalize';
 
-@import "base/global";
-@import "base/grid";
-@import "base/header";
-@import "base/navigation";
-@import "base/footer";
-@import "base/post";
-@import "base/archive_list";
-@import "base/solarized";
 
-@import "base/sidebar";
-@import "aside/recent_posts";
-@import "aside/github";
-@import "aside/pinboard";
-@import "aside/social";
+// LAYOUT
+// ======
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/hero-unit';
+@import 'layout/homepage';
+//@import 'layout/default';
 
-@import "homepage/home";
-@import "homepage/hero_unit";
 
-@import "helpers/classes";
-@import "helpers/grid-fix";
+// COMPONENTS
+// ==========
+//@import '';
+//@import '';
+//@import '';
+//@import '';
+//@import '';
+//@import '';
 
-@import "custom/**/*"
+//@import '../fontawesome/font-awesome';
+
+
+
+
+//@import 'base/global';
+//@import 'base/grid';
+//@import 'base/footer';
+//@import 'base/post';
+//@import 'base/archive_list';
+//@import 'base/solarized';
+//
+//@import 'base/sidebar';
+//@import 'aside/recent_posts';
+//@import 'aside/github';
+//@import 'aside/pinboard';
+//@import 'aside/social';
+//
+//@import 'homepage/home';
+//@import 'homepage/hero_unit';
+//
+//@import 'helpers/classes';
+//@import 'helpers/grid-fix';
+//
+//@import 'custom/**/*'

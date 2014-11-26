@@ -1,0 +1,21 @@
+#header {
+    background-color: $header--background;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 2;
+}
+
+.site-title {
+    color: $header--site-title;
+    font-size: 1.7em;
+    font-weight: bold;
+    line-height: 2.5em;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.menu {
+    float: right;
+}

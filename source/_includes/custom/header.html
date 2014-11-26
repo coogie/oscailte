@@ -1,9 +1,8 @@
-<div class="grid__item two-fifths lap-four-sixths palm-one-whole">
-  <a href="{{ root_url }}/" class="site-title">{{ site.title }}</a>
-</div>
-
-<div class="grid__item three-fifths lap-two-sixths palm-one-whole">
-  <nav>
-    {% include site/navigation.html %}
-  </nav>
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-4">
+        <a href="{{ root_url }}/" class="site-title">{{ site.title }}</a>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-8">
+        {% include site/navigation.html %}
+    </div>
 </div>
