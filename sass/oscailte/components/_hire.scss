@@ -1,0 +1,56 @@
+.hire {
+    font-weight: bold;
+    @media only screen and (max-width: $breakpoint--xsmall-end){
+        text-align: center;
+    }
+
+    .sidebar & {
+        margin: 0 0.5rem;
+    }
+}
+
+.hire--available {
+    color: $hire--available;
+    .hire__link {
+        color: inherit;
+    }
+}
+
+.hire--unavailable {
+    color: $hire--unavailable;
+}
+
+.hire--vibrant {
+    border-radius: 3px;
+    color: #FFF;
+    display: inline-block;
+    text-shadow: 1px 1px 0 rgba(#000, 0.25);
+
+    &.hire--available {
+        @include gradient-vertical($hire--available, darken($hire--available, 5%));
+    }
+    &.hire--unavailable {
+        @include gradient-vertical($hire--unavailable, darken($hire--unavailable, 5%));
+        padding: 1em 2em;
+    }
+
+    @media only screen and (max-width: $breakpoint--xsmall-end){
+        display: block;
+    }
+}
+
+.hire--vibrant .hire__link {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    padding: 1em 2em;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: $breakpoint--xsmall-end){
+    .footer .hire {
+        float: right;
+    }
+}

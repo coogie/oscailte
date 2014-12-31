@@ -1,0 +1,37 @@
+.usp {
+    text-align: center;
+}
+
+.usp__icon {
+    text-align: center;
+    i {
+        border: 10px solid $color--primary;
+        border-radius: 100%;
+        color: $typography--color;
+        display: inline-block;
+        font-size: 6rem;
+        height: 1.1em;
+        line-height: 1.1;
+        padding: 0.3em;
+        width: 1.1em;
+    }
+}
+
+.usp__title {
+    color: $homepage--usp-color;
+    font-size: 1.1rem;
+    line-height: 3em;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.usp__divider {
+    @extend .divider;
+    margin: 0;
+}
+
+.usp__text {
+    margin: 0.75rem 0;
+    text-align: left;
+}

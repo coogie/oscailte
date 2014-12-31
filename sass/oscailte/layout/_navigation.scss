@@ -30,9 +30,13 @@ body{ -webkit-animation: bugfix infinite 1s; }
   margin: 0;
 }
 
+.menu a {
+    color: $navigation--color;
+}
+
 .menu > li > a{
-  @include box-sizing(border-box);
   @include transition(all 0.25s linear);
+  box-sizing: border-box;
   display: block;
   padding: 25px 20px;
   text-decoration: none;
@@ -42,9 +46,9 @@ body{ -webkit-animation: bugfix infinite 1s; }
 }
 
 .menu > li > a:hover, .menu > li > a:focus{
-  background: $site-background;
-  box-shadow: inset 0px 5px $navigation-color;
-  color: $navigation-color;
+  background: darken($header--background, 7%);
+  box-shadow: inset 0px 5px $navigation--color;
+  color: $navigation--color;
   padding: 30px 20px 22px;
 }
 
@@ -54,9 +58,9 @@ body{ -webkit-animation: bugfix infinite 1s; }
 
 @media only screen and (max-width: $breakpoint--medium-end){
   .menu{
-    background: $white;
-    border-top:    1px solid $navigation-color;
-    border-bottom: 4px solid $navigation-color;
+    background: $navigation--background;
+    border-top:    1px solid $navigation--color;
+    border-bottom: 4px solid $navigation--color;
   }
 
   .menu, .menu > li, .menu > li > a{
@@ -68,28 +72,28 @@ body{ -webkit-animation: bugfix infinite 1s; }
   }
 
   .menu > li > a:hover, .menu > li > a:focus{
-    background: $grayLighter;
-    box-shadow: inset 5px 0px $navigation-color;
+    background: darken($navigation--background, 7%);
+    box-shadow: inset 5px 0px $navigation--color;
     padding: 15px 15px 15px 25px;
   }
 
   .toggle::after {
-    @include border-radius(2px);
-    @include box-sizing(border-box);
     @include transition(all 0.5s linear);
+    border-radius: 2px;
+    box-sizing: border-box;
     content: attr(data-open);
     display: block;
     width: 100%;
     margin: 20px 0;
     padding: 10px 50px;
-    background: $navigation-color;
+    background: $navigation--color;
     text-align: center;
     font-size: 12px;
-    color: $white;
+    color: #FFF;
   }
 
   .toggle:hover::after{
-    background: darken($navigation-color, 7%);
+    background: darken($navigation--color, 7%);
   }
 
   #toggle:checked + .toggle::after{

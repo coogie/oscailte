@@ -1,15 +1,15 @@
 #header {
     background-color: $header--background;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 3px rgba(#000, 0.25);
     position: relative;
     z-index: 2;
 }
 
-.site-title {
-    color: $header--site-title;
-    font-size: 1.7em;
+a.site-title {
+    color: $header--title-color;
+    font-size: 1.7rem;
     font-weight: bold;
-    line-height: 2.5em;
+    line-height: 2.5;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
