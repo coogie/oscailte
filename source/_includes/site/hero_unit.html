@@ -1,18 +1,16 @@
 <div class="hero" style="background-image: url('/images/cliffs_of_moher.jpg');">
-
-
     <div class="row middle-xs center-xs start-sm">
         <div class="col-xs-12 col-sm-4">
-            <img class="gravatar" src="/images/gravatar.jpg" width="200" height="200" alt="{{ site.author }}'s Picture"{% if site.email and site.gravatar != false %} data-gravatar="{{ site.email }}"{% endif %}>
+            <img class="hero__gravatar" src="/images/gravatar.jpg" width="250" height="260" alt="{{ site.author }}'s Picture"{% if site.email and site.gravatar != false %} data-gravatar="{{ site.email }}"{% endif %}>
         </div>
         <div class="col-xs-12 col-sm-8">
-            {% include custom/welcome.html %}
+            {% include custom/hero/welcome.html %}
         </div>
     </div>
 
-    <div class="credit">
+    <div class="hero__credit">
         <p>
-            Cliffs of Moher, by <a href="http://www.flickr.com/photos/alfarese/2780612581/" target="_blank">Alessandro Farese</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank" class="licence"><small>(by-nc-nd)</small></a>
+            Cliffs of Moher, by <a href="http://www.flickr.com/photos/alfarese/2780612581/" target="_blank">Alessandro Farese</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank" class="hero__licence"><small>(by-nc-nd)</small></a>
         </p>
     </div>
 </div>

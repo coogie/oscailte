@@ -3,14 +3,14 @@
 {% endif %}
 {% if site.pinboard_user %}
 <script>
-  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
-  var pinboard_user = "{{ site.pinboard_user }}"; //id target for pinboard list
-  var pinboard_count = {{ site.pinboard_count }}; //id target for pinboard list
-  (function(){
-    var pinboardInit = document.createElement('script');
-    pinboardInit.async = true;
-    pinboardInit.src = '{{ root_url }}/javascripts/pinboard.js';
-    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
-  })();
+    var linkroll = 'pinboard_linkroll'; //id target for pinboard list
+    var pinboard_user = "{{ site.pinboard_user }}"; //id target for pinboard list
+    var pinboard_count = {{ site.pinboard_count }}; //id target for pinboard list
+    (function(){
+        var pinboardInit = document.createElement('script');
+        pinboardInit.async = true;
+        pinboardInit.src = '{{ root_url }}/javascripts/pinboard.js';
+        document.getElementsByTagName('head')[0].appendChild(pinboardInit);
+    })();
 </script>
 {% endif %}

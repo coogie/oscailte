@@ -4,33 +4,33 @@
 
         {% include site/header.html %}
 
-        {% if page.hero_unit %}
-            {% include site/hero_unit.html %}
-        {% endif %}
-
-        <div class="row">
-            {% if page.is_post and page.sidebar == false %}
-            <div class="col-xs-12 col-lg-9">
-            {% elsif page.is_homepage %}
-            <div class="col-xs-12">
-            {% else %}
-            <div class="col-xs-12 col-lg-8">
+        <div id="main-content">
+            {% if page.hero_unit %}
+                {% include site/hero_unit.html %}
             {% endif %}
 
-                {{ content | expand_urls: root_url }}
+            <div class="row top-xs center-sm center-md center-lg site-wrapper">
+                {% if page.is_post and page.sidebar == false %}
+                <div class="col-xs-12 col-lg-10">
+                {% elsif page.is_homepage %}
+                <div class="col-xs-12">
+                {% elsif page.is_page and page.sidebar == false %}
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                {% else %}
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                {% endif %}
+                    {{ content | expand_urls: root_url }}
+                </div>
 
+                {% unless page.sidebar == false %}
+                <aside class="sidebar col-xs-12 col-lg-4">
+                    {% include site/sidebar.html %}
+                </aside>
+                {% endunless %}
             </div>
-
-            {% unless page.sidebar == false %}
-            <aside id="sidebar" class="col-xs-12 col-lg-4">
-                {% include site/sidebar.html %}
-            </aside>
-            {% endunless %}
         </div>
 
-        <footer>
-            {% include site/footer.html %}
-        </footer>
+        {% include site/footer.html %}
 
         {% include javascripts/scripts.html %}
 

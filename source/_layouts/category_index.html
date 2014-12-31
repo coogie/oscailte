@@ -4,14 +4,14 @@ title: "Blog index"
 ---
 
 <div id="archive-list">
-  {% for post in site.categories[page.category] %}
-  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-  {% unless year == this_year %}
-    {% assign year = this_year %}
-    <h2>{{ year }}</h2>
-  {% endunless %}
-    <article>
-      {% include blog/archive_post.html %}
-    </article>
-  {% endfor %}
+    {% for post in site.categories[page.category] %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% unless year == this_year %}
+            {% assign year = this_year %}
+            <h2>{{ year }}</h2>
+        {% endunless %}
+        <article class="article article--archive">
+            {% include blog/archive_post.html %}
+        </article>
+    {% endfor %}
 </div>

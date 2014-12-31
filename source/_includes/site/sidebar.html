@@ -1,7 +1,26 @@
-<div class="grid">
+<div class="row">
 
-  {% include asides/social.html %}
+    {% if site.oscailte.hire.visible.sidebar %}
+        {% include custom/hire.html %}
+    {% endif %}
 
-  {% include_array default_asides %}
+    {% include asides/social.html %}
+
+    {% include_array default_asides %}
+
+    <section class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Categories</h3>
+        </div>
+        <div class="list-group">
+            {% for category in site.categories %}
+            {% capture category_url %}/{{ site.category_dir }}/{{ category | first | slugize | downcase | replace:' ','-' | append:'/index.html'}}{% endcapture %}
+            <a class="list-group-item {% if category_url == page.url %}active{% endif %}" href="{{ root_url | append:category_url }}">
+                <span class="badge">{{ category | last | size }}</span>
+                {{ category | first }}
+            </a>
+            {% endfor %}
+        </div>
+    </section>
 
 </div>

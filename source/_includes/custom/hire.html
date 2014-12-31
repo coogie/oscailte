@@ -1,0 +1,20 @@
+{% if site.oscailte.hire.subject %}
+    {% capture subject %}{{ site.oscailte.hire.subject }}{% endcapture %}
+{% else %}
+    {% capture subject %}New%20job%20opportunity{% endcapture %}
+{% endif %}
+
+{% if site.oscailte.hire.link %}
+    {% capture link %}{{ site.oscailte.hire.link }}{% endcapture %}
+{% else %}
+    {% capture link %}mailto:{{ site.email }}?subject={{ subject }}{% endcapture %}
+{% endif %}
+
+
+{% if site.oscailte.hire.message %}
+<div class="hire hire--{% if site.oscailte.hire.available == false %}un{% endif %}available{% if site.oscailte.hire.vibrant %} hire--vibrant{% endif %}">
+    {% if site.oscailte.hire.available%}<a class="hire__link" href="{{ link }}">{% endif %}
+        {{ site.oscailte.hire.message }}
+    {% if site.oscailte.hire.available%}</a>{% endif %}
+</div>
+{% endif %}
