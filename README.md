@@ -46,7 +46,7 @@ Having problems when installing with zsh? Try `rake install\['oscailte'\]` inste
 Having problems getting the git submodules to pull in intuitcss? You can run the following, assuming you are in your octopress directory.
 
     $ cd .themes/oscailte/sass/intuitcss
-    $ git clone https://github.com/coogie/oscailte.git
+    $ git clone https://github.com/csswizardry/inuit.css.git
 
 Then you must comment out line 4 of sass/oscailte/_oscailte.scss and uncomment line 5 of the same file; this will change the path to pull in inuitcss. Now you can rake install and generate as before.
 
