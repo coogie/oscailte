@@ -204,10 +204,10 @@ Many of the colours used throughout Oscailte can be fully customised and found w
 ### Default Dummy Text
 
 You can modify the default 'Lorem Ipsum' text on the Hero Unit and homepage by editing the following files:
-* `source/_includes/custom/hero/welcome.html`
-* `source/_includes/custom/homepage/grid_item_left.html`
-* `source/_includes/custom/homepage/grid_item_middle.html`
-* `source/_includes/custom/homepage/grid_item_right.html`
+* [`source/_includes/custom/hero/welcome.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/hero/welcome.html)
+* [`source/_includes/custom/homepage/grid_item_left.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/homepage/grid_item_left.html)
+* [`source/_includes/custom/homepage/grid_item_middle.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/homepage/grid_item_middle.html)
+* [`source/_includes/custom/homepage/grid_item_right.html`](https://github.com/coogie/oscailte/blob/master/source/_includes/custom/homepage/grid_item_right.html)
 
 ### Default Icons on Homepage
 You can modify and change the default icons which are above the grid items by editing the following file in the `source` directory:
