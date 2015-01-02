@@ -14,7 +14,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
 #toggle, .toggle { display: none; }
 .menu > li { list-style: none; float:left;  }
 
-@media only screen and (max-width: $breakpoint--medium-end){
+@media only screen and (max-width: $breakpoint--small-end){
   .menu { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
   .menu > li { display: block; width: 100%; margin: 0; }
   .menu > li > a { display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -56,7 +56,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
   z-index: 20;
 }
 
-@media only screen and (max-width: $breakpoint--medium-end){
+@media only screen and (max-width: $breakpoint--small-end){
   .menu{
     background: $navigation--background;
     border-top:    1px solid $navigation--color;
