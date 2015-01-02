@@ -1,6 +1,6 @@
 .hero {
     background-color: $hero--background;
-    background-position: 0 50%;
+    background-position: 0 30%;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
@@ -9,7 +9,7 @@
     color: $hero--color;
     font-weight: bold;
     margin: -1.5rem 0 1.5rem;
-    padding: 50px 0;
+    padding: 4rem 0;
     position: relative;
     z-index: 1;
 
