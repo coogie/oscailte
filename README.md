@@ -7,7 +7,7 @@
 
 Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation) Gaeilge for "Open") is a light and clean theme for use on [Octopress](http://octopress.org/) sites, released under the MIT Licence.
 
-![Oscailte Preview](http://i.imgur.com/0GlIXHW.jpg)
+![Oscailte Preview](http://i.imgur.com/QxKWaIg.png)
 
 ## Quicklinks
   - [Installation](#installation)
