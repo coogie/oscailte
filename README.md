@@ -82,24 +82,27 @@ Next, update your _config.yml with the following:
 
 ### Homepage
 
-Oscailte includes a clean page, separated from the blogging capabilities of Octopress. The theme can be modified to instead use just the blog index as the homepage.
+Oscailte includes a clean page, separated from the blogging capabilities of Octopress.
+The theme can be modified to instead use just the [blog index as the homepage](#using-the-blog-as-the-homepage).
 
 ### Excerpts
 
-While excerpts are not necessarily a theme feature, Oscailte contains styling to support them. In order to use excerpts on your site simply insert `<!-- more -->` somewhere inside your post content to trigger the break.
+While excerpts are not necessarily a theme feature, Oscailte contains styling to support them.
+In order to use excerpts on your site simply insert `<!-- more -->` somewhere inside your post content to trigger the break.
 
 ![Excerpt Preview](http://i.imgur.com/Hlk0Nqh.png)
 
 ### Gravatar
 
-Oscailte makes use of the `site.email` used in `_config.yml` (if present) to grab and display your Gravatar if you use one. Otherwise, the theme will instead display the default Gravatar logo, which can be changed by replacing the file locally.
+Oscailte makes use of the `site.email` used in `_config.yml` (if present) to grab and display your Gravatar if you use one.
+Otherwise, the theme will instead display the default Gravatar logo, which can be changed by replacing the file locally.
 
-If you wish to make use of the Gravatar feature, please ensure you use an email address that you do not mind being publicly crawlable by bots/spiders.
+If you make use of the Gravatar feature, please ensure you use an email address that you do not mind being publicly crawlable by bots/spiders.
 
 ### Social Sidebar
 
 Oscailte allows you to display links to your other online profiles in a quick and easy fashion. The links for each of these are handled within `site.oscailte.social` in your `_config.yml`.
-Please note that these are only required if you wish to display items such as Social Sidebar, Github Repos, Twitter Timeline, and [Facebook OpenGraph Metadata](#facebook-open-graph).
+Please note that these are only required if you wish to display items such as Social Sidebar, Github Repos, Twitter Timeline, and [Facebook OpenGraph Metadata](#facebook-open-graph-preview).
 
 Oscailte supports the above social sites out of the box, but more may be (infinitely) added as the user sees fit.
 
@@ -121,7 +124,8 @@ $sites:
     reddit        #5F99CF,
     stackoverflow #FE7A15,
     twitter       #00a0d1,
-    youtube       #CC181E;````
+    youtube       #CC181E;
+````
 
 ### Facebook Open Graph ([Preview](http://i.imgur.com/iLDBoFV.png))
 
