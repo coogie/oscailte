@@ -17,7 +17,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Social Sidebar](#social-sidebar)
     - [Facebook Open Graph](#facebook-open-graph-preview)
     - [Twitter Timeline Aside](#twitter-timeline-aside-preview)
-    - [(Un)Available For Hire](#)
+    - [(Un)Available For Hire](#unavailable-for-hire)
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
@@ -198,7 +198,7 @@ default_asides: [..., asides/twitter.html, ...]
 ```
 
 
-### (Un)Availble For Hire
+### (Un)Available For Hire
 
 This feature displays a message within the footer or the sidebar, or both!
 It can be used to bring attention to your availability for taking on new projects.
@@ -215,6 +215,8 @@ oscailte:
         vibrant: false   # Makes the widget much more noticeable
         message: "Available for new opportunities"
 ```
+
+If `oscailte.hire.available` is set to `true`, then the displayed message will become a link, with a `mailto:` populated with your `site.email`.
 
 ## Customising Oscailte
 
