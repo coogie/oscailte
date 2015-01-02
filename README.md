@@ -234,7 +234,7 @@ This will overwrite the default index with the contents of the Blog index. **Be 
 You can change the background image of the Hero Unit by replacing the following file: `source/images/hero_background.jpg`
 
 #### Modifying text
-For modifying the text, you can replace the following with your preferred text, or remove it entirely in `source/`:
+For modifying the text, you can replace the following with your preferred text, or remove it entirely in `source/_includes/site/hero_unit.html`:
 
 ``` html
 Cliffs of Moher, by <a href="http://www.flickr.com/photos/alfarese/2780612581/" target="_blank">Alessandro Farese</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank" class="licence"><small>(by-nc-nd)</small></a>
