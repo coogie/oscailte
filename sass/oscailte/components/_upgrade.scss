@@ -1,0 +1,29 @@
+.upgrade {
+    background-color: $upgrade--background;
+    border-left: 3px solid $upgrade--highlight;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(#000, 0.25);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.upgrade__title {
+    color: $upgrade--highlight;
+}
+
+.upgrade__text {
+    margin-bottom: 0;
+    a {
+        color: $upgrade--highlight;
+        &:hover {
+            color: darken($upgrade--highlight, 5%);
+        }
+    }
+}
+
+.upgrade__icon {
+    color: $upgrade--highlight;
+    float: left;
+    font-size: 4rem;
+    padding: 1rem 2rem 1rem 1rem;
+}

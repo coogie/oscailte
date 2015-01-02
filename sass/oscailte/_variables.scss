@@ -109,6 +109,12 @@ $hire--available:   $context--positive !default;
 $hire--unavailable: $context--negative !default;
 
 
+// BROWSER UPGRADE VARIABLES
+// -------------------------
+$upgrade--background: $header--background !default;
+$upgrade--highlight:  $context--negative !default;
+
+
 // Social network colors
 // Organised in a key-value pair list for dynamic SASS
 // Can be infinitely extended by adding more as required
