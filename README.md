@@ -231,7 +231,7 @@ This will overwrite the default index with the contents of the Blog index. **Be 
 
 ### Modifying the Image and Related Text on Homepage
 #### Modifying image
-You can change the background image of the Hero Unit by replacing the following file: `source/images/cliffs_of_moher.jpg`
+You can change the background image of the Hero Unit by replacing the following file: `source/images/hero_background.jpg`
 
 #### Modifying text
 For modifying the text, you can replace the following with your preferred text, or remove it entirely in `source/`:
