@@ -2,21 +2,21 @@
 layout: default
 ---
 
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-  <article class="listing">
-    {% include blog/post/article.html %}
-  </article>
-  <hr>
-  {% endfor %}
+    {% assign index = true %}
+    {% for post in paginator.posts %}
+        {% assign content = post.content %}
+        <article class="article article--index">
+            {% include blog/post/article.html %}
+        </article>
+        <hr>
+    {% endfor %}
 
-  <div class="pagination">
+    <div class="pagination">
     {% if paginator.next_page %}
-      <a class="btn pull-left" href="{{paginator.next_page_path}}">&larr; Older</a>
+        <a class="btn pull-left" href="{{paginator.next_page_path}}">&larr; Older</a>
     {% endif %}
 
     {% if paginator.previous_page %}
-    <a class="btn pull-right" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
+        <a class="btn pull-right" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
     {% endif %}
-  </div>
+    </div>

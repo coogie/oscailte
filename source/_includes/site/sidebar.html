@@ -1,7 +1,13 @@
-<div class="grid">
+<div class="row">
 
-  {% include asides/social.html %}
+    {% if site.oscailte.hire.visible.sidebar %}
+        <section class="hire--aside col-xs-12 col-sm-10 col-md-12">
+            {% include custom/hire.html %}
+        </section>
+    {% endif %}
 
-  {% include_array default_asides %}
+    {% include asides/social.html %}
+
+    {% include_array default_asides %}
 
 </div>

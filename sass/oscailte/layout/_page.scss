@@ -1,0 +1,4 @@
+.page__title {
+    @extend .title--indent;
+    font-family: $post--title-font;
+}

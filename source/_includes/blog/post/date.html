@@ -1,15 +1,11 @@
-{% capture date %}{{ page.date }}{{ post.date }}{% endcapture %}
-{% capture date_formatted %}{{ page.date_formatted }}{{ post.date_formatted }}{% endcapture %}
-{% capture has_date %}{{ date | size }}{% endcapture %}
+{% capture pub_date %}{{ page.date_text }}{{ post.date_text }}{% endcapture %}
+{% capture pub_date_xml %}{{ page.date_xml }}{{ post.date_xml }}{% endcapture %}
+{% capture has_pub_date %}{{ pub_date | size }}{% endcapture %}
+{% capture updated_date %}{{ page.date_updated_text }}{{ post.date_updated_text }}{% endcapture %}
+{% capture was_updated %}{{ updated_date | size }}{% endcapture %}
 
-{% capture updated %}{{ page.updated }}{{ post.updated }}{% endcapture %}
-{% capture updated_formatted %}{{ page.updated_formatted }}{{ post.updated_formatted }}{% endcapture %}
-{% capture was_updated %}{{ updated | size }}{% endcapture %}
-
-{% if has_date != '0' %}
-  {% capture time %}<time class="pull-left" datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}><i class="icon-calendar"></i> {{ date_formatted }}</time>{% endcapture %}
+{% if has_pub_date %}
+    <time class="article__date pull-left" datetime="{{ pub_date_xml }}" pubdate{% if was_updated != '0' %} title="Last updated: {{ updated_date }}"{% endif %}><i class="fa fa-calendar"></i> {{ pub_date }}{% if was_updated != '0' %} <sup>*</sup>{% endif %}</time>
 {% endif %}
 
-{% if was_updated != '0' %}
-  {% capture updated %}<time class="pull-left" datetime="{{ updated | datetime | date_to_xmlschema }}" class="updated">Updated {{ updated_formatted }}</time>{% endcapture %}
-{% else %}{% assign updated = false %}{% endif %}
+

@@ -1,7 +1,7 @@
 ---
-layout: nil
+layout: null
 ---
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: {{ site.url }}/sitemap.xml 
+Sitemap: {{ site.url }}/sitemap.xml

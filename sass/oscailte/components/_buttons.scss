@@ -1,0 +1,30 @@
+.btn {
+    @include gradient-vertical($button--default, darken($button--default, 5%));
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(#000, 0.25);
+    color: $button--color;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    @if $button--text-shadow {
+        text-shadow: 1px 1px 0 rgba(#000, 0.25);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {
+        color: $button--color;
+    }
+    &:active {
+        transform: translate(1px, 1px);
+    }
+
+    &.btn--positive {
+        @include gradient-vertical($button--positive, darken($button--positive, 5%));
+    }
+    &.btn--negative {
+        @include gradient-vertical($button--negative, darken($button--negative, 5%));
+    }
+}

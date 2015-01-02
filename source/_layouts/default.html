@@ -1,46 +1,42 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}{% include site/head.html %}
 
-  <body {% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
+    <body {% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
 
-    <header>
-      {% include site/header.html %}
-    </header>
+        {% include site/header.html %}
 
-    {% if page.hero_unit %}
-      {% include site/hero_unit.html %}
-    {% endif %}
+        <div id="main-content">
 
-    <div class="grid-wrapper">
-      <div class="grid grid-center">
-        {% if page.is_post and page.sidebar == false %}
-        <div class="grid__item four-fifths lap-one-whole palm-one-whole">
-        {% elsif page.is_homepage %}
-        <div class="grid__item one-whole">
-        {% else %}
-        <div class="grid__item two-thirds lap-one-whole palm-one-whole">
-        {% endif %}
+            {% include site/upgrade.html %}
 
-          {{ content | expand_urls: root_url }}
+            {% if page.hero_unit %}
+                {% include site/hero_unit.html %}
+            {% endif %}
 
+            <div class="row top-xs center-sm center-md center-lg site-wrapper">
+                {% if page.is_post and page.sidebar == false %}
+                <div class="col-xs-12 col-lg-10">
+                {% elsif page.is_homepage %}
+                <div class="col-xs-12">
+                {% elsif page.is_page and page.sidebar == false %}
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                {% else %}
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                {% endif %}
+                    {{ content | expand_urls: root_url }}
+                </div>
+
+                {% unless page.sidebar == false %}
+                <aside class="sidebar col-xs-12 col-md-4 col-lg-4">
+                    {% include site/sidebar.html %}
+                </aside>
+                {% endunless %}
+            </div>
         </div>
 
-        {% unless page.sidebar == false %}
-        <aside id="sidebar" class="grid__item one-third lap-one-whole palm-one-whole">
-          {% include site/sidebar.html %}
-        </aside>
-        {% endunless %}
-      </div>
-    </div>
+        {% include site/footer.html %}
 
-    <footer>
-      {% include site/footer.html %}
-    </footer>
+        {% include javascripts/scripts.html %}
 
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
+    </body>
 
-    {% include javascripts/scripts.html %}
-
-  </body>
 </html>

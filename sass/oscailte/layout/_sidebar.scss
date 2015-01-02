@@ -1,0 +1,40 @@
+.sidebar {
+
+    .row {
+        width: 100%;
+        > section {
+            padding-top: 1rem;
+        }
+    }
+
+    section {
+        @media only screen and (min-width: $breakpoint--medium-end){
+            &:first-child {
+                > h1 {margin-top: 0;}
+            }
+        }
+
+        > h1 {
+            border-bottom: 1px solid $color--primary;
+            color: $typography--color;
+            font-size: 1.25rem;
+            margin: 0 0 0.5em;
+            padding-bottom: 5px;
+
+            .btn {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-bottom: -5px;
+                padding: 5px 10px;
+                text-decoration: none;
+            }
+        }
+
+        .loading {
+            display: block;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+}
