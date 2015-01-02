@@ -17,6 +17,7 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
     - [Social Sidebar](#social-sidebar)
     - [Facebook Open Graph](#facebook-open-graph-preview)
     - [Twitter Timeline Aside](#twitter-timeline-aside-preview)
+    - [(Un)Available For Hire](#)
   - [Customising Oscailte](#customising-oscailte)
     - [Site Colours](#site-colours)
     - [Default Dummy Text](#default-dummy-text)
@@ -48,6 +49,7 @@ Next, update your _config.yml with the following:
             visible:
                 footer: false
                 sidebar: true
+            footer-cols: 6 # Number of columns available for the footer component, max 12
             available: true # Whether or not you're available for hire
             vibrant: false # Makes the widget much more noticeable
             message: "Available for new opportunities"
@@ -193,6 +195,25 @@ Next, modify your `default_asides` within your `_config.yml` to include the Twit
 
 ```
 default_asides: [..., asides/twitter.html, ...]
+```
+
+
+### (Un)Availble For Hire
+
+This feature displays a message within the footer or the sidebar, or both!
+It can be used to bring attention to your availability for taking on new projects.
+The settings for it should be placed within your `_config.yml`
+
+```yml
+oscailte:
+    hire:
+        visible:
+            footer: false
+            sidebar: true
+        footer-cols: 6   # Number of columns available for the footer component, max 12
+        available: true  # Whether or not you're available for hire
+        vibrant: false   # Makes the widget much more noticeable
+        message: "Available for new opportunities"
 ```
 
 ## Customising Oscailte
