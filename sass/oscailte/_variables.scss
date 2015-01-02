@@ -20,19 +20,18 @@ $context--negative:    #D4372F !default;
 
 // TYPOGRAPHY VARIABLES
 // --------------------
-$typography--font-size:     16px !default;
-$typography--line-height:   22px !default;
-$typography--color:         $gray--darker !default;
-$typography--serif:         'Droid Serif', Georgia, 'Times New Roman', Times, serif !default;
-$typography--sans-serif:    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$typography--base-family:   $typography--sans-serif !default;
-$heading--font-family:      $typography--base-family !default;
-$heading--h1:               36px !default;
-$heading--h2:               30px !default;
-$heading--h3:               24px !default;
-$heading--h4:               20px !default;
-$heading--h5:               18px !default;
-$heading--h6:               16px !default;
+$typography--font-size:      16px !default;
+$typography--line-height:    22px !default;
+$typography--color:          $gray--darker !default;
+$typography--serif:          'Droid Serif', Georgia, 'Times New Roman', Times, serif !default;
+$typography--sans-serif:     'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$typography--base-family:    $typography--sans-serif !default;
+$heading--h1:                36px !default;
+$heading--h2:                30px !default;
+$heading--h3:                24px !default;
+$heading--h4:                20px !default;
+$heading--h5:                18px !default;
+$heading--h6:                16px !default;
 
 
 // GRID VARIABLES
@@ -75,6 +74,7 @@ $homepage--usp-color: $typography--color !default;
 // POST VARIABLES
 // --------------
 $post--title-color: $color--primary !default;
+$post--title-font:  $typography--serif !default;
 
 
 // SYNTAX VARIABLES (Code Highlighting)

@@ -71,7 +71,10 @@ $meta-color: lighten($typography--color, 20%);
             margin: 0 20px 10px 0;
         }
     }
+}
 
+.article__title {
+    font-family: $post--title-font;
 }
 
 .article__tags {
