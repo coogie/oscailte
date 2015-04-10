@@ -25,7 +25,7 @@ a {
     }
     &::before {
         content: "// ";
-        color: $color--primary;
+        color: $double--slash-color;
     }
 }
 
