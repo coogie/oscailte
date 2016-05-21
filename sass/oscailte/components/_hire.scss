@@ -24,6 +24,7 @@
     border-radius: 3px;
     color: #FFF;
     display: inline-block;
+    padding: 1em 2em;
     text-shadow: 1px 1px 0 rgba(#000, 0.25);
 
     &.hire--available {
@@ -31,7 +32,6 @@
     }
     &.hire--unavailable {
         @include gradient-vertical($hire--unavailable, darken($hire--unavailable, 5%));
-        padding: 1em 2em;
     }
 
     @media only screen and (max-width: $breakpoint--xsmall-end){
