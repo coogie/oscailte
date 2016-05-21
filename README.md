@@ -1,7 +1,7 @@
 # Oscailte &mdash; An Octopress theme
 
 ---
-## ![Attention](http://i.imgur.com/iBbFfJH.png) Latest version: 2.0.1</sup>
+## ![Attention](http://i.imgur.com/iBbFfJH.png) Latest version: 2.0.2</sup>
 
 ---
 
