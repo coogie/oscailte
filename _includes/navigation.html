@@ -9,7 +9,7 @@
       {%- assign nav_page = site.pages | where: "path", path | first -%}
       {%- if nav_page.title -%}
       <li class="Navigation__item{% if page.url == nav_page.url %} is-active{%endif%}">
-        <a class="Navigation__link" href="{{nav_page.url}}">{{nav_page.title | escape}}</a>
+        <a class="Navigation__link" href="{{ nav_page.url | relative_url }}">{{nav_page.title | escape}}</a>
       </li>
       {%- endif -%}
     {%- endfor -%}
