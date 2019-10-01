@@ -20,7 +20,6 @@ plugins:
 permalink: /blog/:year/:month/:day/:title/
 
 oscailte:
-  posts_url: '/blog'
   google_analytics: UA-36133007-3
   social:
     github: jekyll
