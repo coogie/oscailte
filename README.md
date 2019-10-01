@@ -1,7 +1,7 @@
 # Oscailte &mdash; A Jekyll theme
 
 ---
-## ![Attention](http://i.imgur.com/iBbFfJH.png) Latest version: 3.0</sup>
+## ![Attention](http://i.imgur.com/iBbFfJH.png) Latest version: 3.0.1</sup>
 
 ---
 
