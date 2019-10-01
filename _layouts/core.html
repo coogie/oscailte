@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include strings.html -%}
+
+  {%- include head.html -%}
+
+  {%- capture body_modifier -%}
+    {%- if page.body_modifier -%}
+      {{ page.body_modifier }}
+    {%- else -%}
+      {{ page.layout }}
+    {%- endif -%}
+  {%- endcapture -%}
+
+  <body class="Site {% if body_modifier != '' %}Site--{{ body_modifier }}{% endif %}">
+    {%- include header.html -%}
+
+    <a href="#main-content" class="SkipNav" tabindex="1">{{ skip_to_main_content }}</a>
+
+    <main class="Site__main o-no-owl" id="main-content">
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+    {%- include google-analytics.html -%}
+  </body>
+</html> 

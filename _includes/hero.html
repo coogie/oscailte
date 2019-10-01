@@ -1,0 +1,17 @@
+<section class="Hero o-circuited">
+  <div class="Hero__content Container">
+    {%- unless page.layout == 'post' or site.oscailte.social.github == nil -%}
+      {% avatar {{site.oscailte.social.github}} size=350 %}
+    {%- endunless -%}
+
+    <h1 class="Hero__title">
+      {{ include.title }}
+    </h1>
+
+    {% if include.meta %}
+      <div class="Hero__meta">
+        {{ include.meta }}
+      </div>
+    {% endif %}
+  </div>
+</section>

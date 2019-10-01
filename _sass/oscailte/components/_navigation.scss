@@ -1,0 +1,32 @@
+.Navigation {
+  &__items,
+  &__item {
+    height: 100%;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    margin: 0;
+  }
+  
+  &__link {
+    display: block;
+    padding: .5em 1em;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+}
+
+@include breakpoint("medium") {
+  .Navigation {
+    margin-top: 0;
+  }
+}

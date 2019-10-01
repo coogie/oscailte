@@ -1,0 +1,11 @@
+.Button {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  box-shadow: inset 0px -3px 0 rgba(#000, .2);
+  color: #fff;
+  display: inline-block;
+  padding: .5em .75em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(#000, .1);
+}

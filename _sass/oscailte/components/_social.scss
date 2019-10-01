@@ -1,0 +1,55 @@
+.Social {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--site-owl-spacing) / 2);
+    justify-content: center;
+  }
+
+  &__item {
+    font-size: 2em;
+
+    @each $site, $color in $social-map {
+      &--#{$site} {
+        background-color: $color;
+        color: auto-contrast($color);
+      }
+    }
+  }
+  
+  &__link {
+    color: inherit;
+    display: block;
+    line-height: 1;
+    overflow: hidden;
+    padding: 0.2em;
+    text-decoration: none;
+    z-index: 1;
+
+    &:hover {
+      .Icon {
+        transform: scale(1.15) rotate(10deg);
+      }
+    }
+  }
+
+  .Icon {
+    transition: all 120ms ease-out;
+    vertical-align: top;
+  }
+}
+
+@include breakpoint("medium") {
+  .Social {
+    margin-top: 0;
+  }
+
+  .Social__list {
+    display: grid;
+    grid-template: auto / repeat(5, auto);
+   }   
+
+   .Icon {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,29 @@
+$breakpoints: (
+  "medium": 48em,
+  "large":  85em,
+);
+
+@mixin breakpoint($size) {
+  $width: map-get($breakpoints, $size);
+  @if $size == 'small' {
+    @content;
+  }
+  @else {
+    @media all and (min-width: $width) {
+      @content;
+    } 
+  }
+}
+
+@mixin generate-typography-properties($map) {
+  @each $breakpoint, $attrs in $map {
+    @include breakpoint($breakpoint) {
+      :root {
+        @each $attr, $values in $attrs {
+          --typography-#{$attr}-fz: #{nth($values, 1)};
+          --typography-#{$attr}-lh: #{nth($values, 2)};
+        }
+      }
+    }
+  }
+}

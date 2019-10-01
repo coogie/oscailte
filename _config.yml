@@ -1,0 +1,39 @@
+title: Oscailte
+subtitle: A powerful, clean, and responsive Jekyll theme. 
+author: GitHub User
+email: your-email@example.com
+description: >-
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: ""
+
+# Build settings
+theme: oscailte
+show_excerpts: true
+
+permalink: /blog/:year/:month/:day/:title/
+
+oscailte:
+  posts_url: '/blog'
+  google_analytics: UA-36133007-3
+  social:
+    github: jekyll
+    twitter: jekyllrb
+    rss: rss
+    dribbble: jekyll
+    facebook: jekyll
+    flickr:   jekyll
+    instagram: jekyll
+    linkedin: jekyll
+    pinterest: jekyll
+    telegram: jekyll
+    microdotblog: jekyll
+    keybase: jekyll
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - index.md
+# - about.md

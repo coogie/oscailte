@@ -1,0 +1,59 @@
+.RecentPosts {
+  &__title {
+    display: inline-block;
+  }
+
+  &__list {
+    display: grid;
+    grid-template: auto;
+    gap: var(--site-owl-spacing);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-height: 20rem;
+  }
+
+  &__excerpt {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      background-image: linear-gradient(to top, #fff, transparent);
+      content: "";
+      display: block;
+      height: 3rem;
+      position: absolute;
+        bottom: 0;
+      width: 100%;
+    }
+
+    > p {
+      margin: 0;
+    }
+  }
+
+  .Button {
+    align-self: flex-end;
+    display: block;
+    width: 100%;
+  }
+}
+
+@include breakpoint("medium") {
+  .RecentPosts__list {
+    grid-template: auto / repeat(2, 1fr);
+  }
+  .RecentPosts .Button {
+    font-size: 1rem;
+    width: auto;
+  }
+}
+
+@include breakpoint("large") {
+  .RecentPosts__list {
+    grid-template: auto / repeat(3, 1fr);
+  }
+}

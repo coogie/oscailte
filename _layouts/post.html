@@ -1,0 +1,38 @@
+---
+layout: core
+---
+{%- include strings.html -%}
+
+{%- assign date_iso = page.date | date: "%Y-%m-%d" -%}
+{%- assign date_formatted = page.date | date_to_string -%}
+
+{%- assign upper_minutes = page.content | number_of_words | divided_by: 160  -%}
+{%- assign lower_minutes = page.content | number_of_words | divided_by: 180  -%}
+
+{%- capture ttr -%}
+  {%- if upper_minutes == 0 -%}
+    {{ x_minute_read | replace: "$x$", "&lt;1" }}
+  {%- elsif upper_minutes == lower_minutes -%}
+    {%- capture val -%}~{{ upper_minutes }}{%- endcapture -%}
+    {{ x_minute_read | replace: "$x$", val }}
+  {%- else -%}
+    {%- capture val -%}{{ lower_minutes }}-{{ upper_minutes }}{%- endcapture -%}
+    {{ x_minute_read | replace: "$x$", val }}
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- capture meta -%}
+  <time class="Date" datetime="{{ date_iso }}">{{ date_formatted }}</time> &mdash; {{ ttr }}
+{%- endcapture -%}
+
+<header>
+  {% include hero.html title=page.title meta=meta %}
+</header>
+
+<div class="Container">
+  <article>
+    {{ page.content }} 
+  </article>
+
+  {%- include comments.html -%}
+</div>

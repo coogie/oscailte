@@ -1,0 +1,27 @@
+// Returns either the `$light` or `$dark` color
+// by deciding which contrasts more with `$color`.
+//
+// E.g. This can be used to select the more readable foreground color
+// for a given background color.
+//
+// @param  $color {Color} - The color that you wish to contrast with.
+// @return {Color} - Returns the value of `$dark` or `$light`, based on which one provides better contrast against the passed `$color`.
+@function auto-contrast($color) {
+  $dark: #000;
+  $light: #fff;
+
+  @if $color == null {
+    @return null;
+  }
+  @else {
+    // =====
+    // $color-brightness: round((red($color) * 299) + (green($color) * 587) + (blue($color) * 114) / 1000);
+    // $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+    // @return if(abs($color-brightness) < ($light-color / 2), $light, $dark);
+    // =====
+
+    // YIQ Method for calculating colour contrast
+    $yiq: (red($color) * 299 + green($color) * 587 + blue($color) * 114) / 1000;
+    @return if($yiq >= 128, $dark, $light);
+  }
+}

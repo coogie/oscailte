@@ -1,0 +1,22 @@
+.Site__footer {
+  background-color: #222;
+  color: #aaa;
+  padding: calc(var(--site-owl-spacing) * 2) 0;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+
+  br,
+  p {
+    margin: 0;
+  }
+}
+
+@include breakpoint("medium") {
+  .Site__footer .Container {
+    display: flex;
+    justify-content: space-between;
+   }     
+  .Site__footer {
+    text-align: left;
+  }
+}
