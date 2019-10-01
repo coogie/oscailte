@@ -1,0 +1,44 @@
+---
+layout: core
+---
+{%- include strings.html -%}
+
+{%- include hero.html title=hero_title -%}
+
+<section class="Container">
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+  <aside class="RecentPosts">
+    <h2 class="RecentPosts__title">{{ recent_posts }}</h2>
+    {%- if site.oscailte.posts_url -%}
+    <small>
+      <a class="RecentPosts__all" href="{{ site.oscailte.posts_url | relative_url }}">
+        {{ view_all }}
+      </a>  
+    </small>
+    {%- endif -%}
+    <ul class="RecentPosts__list o-list-bare">
+      {%- for post in site.posts limit: 6 -%}
+      <li class="RecentPosts__item Card o-no-owl">
+        {%- assign date_format = site.oscailte.date_format | default: "%b %-d, %Y" -%}
+        <h3 class="Card__title">
+          <a class="RecentPosts__link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <small class="Card__meta o-no-owl o-muted">
+          {%- include icon.html icon="calendar" -%} {{ post.date | date: date_format }}
+        </small>
+        {%- if site.show_excerpts -%}
+        <div class="RecentPosts__excerpt o-no-owl">
+          {{ post.excerpt }}
+        </div>
+        {%- endif -%}
+        <a class="Button" href="{{ post.url | relative_url }}">{{ read_full }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </aside>
+  {%- endif -%}
+</section>

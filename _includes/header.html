@@ -1,0 +1,17 @@
+<header class="Header">
+  <div class="Container">
+    {% if site.title %}
+    <h1 class="Header__title">
+      <a href="{{ site.url }}">
+        {{ site.title }}
+        {% if site.subtitle %}
+          <br>
+          <small class="Header__subtitle">{{ site.subtitle }}</small>
+        {% endif %}
+      </a>
+    </h1>
+    {% endif %}
+
+    {% include navigation.html %}
+  </div>
+</header>

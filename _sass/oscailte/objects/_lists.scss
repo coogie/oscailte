@@ -1,0 +1,11 @@
+.o-list-bare {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.o-list-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

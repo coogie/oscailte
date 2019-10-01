@@ -1,0 +1,51 @@
+.Header {
+  background-color: var(--header-background, #fff);
+  border-top: 5px solid var(--color-primary);
+  box-shadow: var(--box-shadow);
+  margin: 0;
+  padding: 1em 0;
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  a {
+    color: var(--header-link-color, var(--color-primary));
+  }
+
+  &__title {
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(#000, .1);
+    
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+  }
+
+  &__subtitle {
+    font-size: .55em;
+  }
+}
+
+@include breakpoint("medium") {
+  .Header {
+    .Container {
+      flex-direction: row;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+
+    &__subtitle {
+      margin-top: 0;
+    }
+  }
+}

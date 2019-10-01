@@ -1,0 +1,15 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--typography-heading-family);
+}
+
+@for $level from 1 through 6 {
+  h#{$level}, .h#{$level} {
+    font-size: var(--typography-h#{$level}-fz);
+    line-height: var(--typography-h#{$level}-lh);
+  }
+}

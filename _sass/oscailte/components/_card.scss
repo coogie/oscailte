@@ -1,0 +1,19 @@
+.Card {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  
+  &__title {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  &__meta {
+    color: #666;
+
+    .Icon {
+      margin-right: 5px;
+    }
+  }
+}

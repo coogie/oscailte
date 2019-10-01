@@ -1,0 +1,11 @@
+{%- assign analyics_id = site.oscailte.google_analytics -%}
+{%- if analyics_id and jekyll.environment == 'production' -%}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ analyics_id }}"></script>
+<script>
+  window['ga-disable-{{ analyics_id }}'] = window.OSCAILTE_DNT;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ analyics_id }}');
+</script>
+{%- endif -%}

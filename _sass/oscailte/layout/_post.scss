@@ -1,0 +1,14 @@
+.Site--post {
+  article.Container img {
+    background-color: var(--header-background, #fff);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    padding: .25rem;
+  }
+
+  .Hero__title {
+    margin-top: 0;
+  }
+}

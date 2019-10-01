@@ -1,0 +1,18 @@
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+
+{%- if titles_size > 0 -%}
+<nav class="Navigation">
+  <ul class="Navigation__items o-list-bare">
+    {%- for path in page_paths -%}
+      {%- assign nav_page = site.pages | where: "path", path | first -%}
+      {%- if nav_page.title -%}
+      <li class="Navigation__item{% if page.url == nav_page.url %} is-active{%endif%}">
+        <a class="Navigation__link" href="{{nav_page.url}}">{{nav_page.title | escape}}</a>
+      </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</nav>
+{% endif %}

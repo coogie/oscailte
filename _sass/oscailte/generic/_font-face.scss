@@ -1,0 +1,63 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/oscailte/fonts/lato-v16-latin-regular.eot');
+  src:
+    local('Lato Regular'),
+    local('Lato-Regular'),
+    url('/assets/oscailte/fonts/lato-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/oscailte/fonts/lato-v16-latin-regular.woff2') format('woff2'),
+    url('/assets/oscailte/fonts/lato-v16-latin-regular.woff') format('woff'),
+    url('/assets/oscailte/fonts/lato-v16-latin-regular.ttf') format('truetype'),
+    url('/assets/oscailte/fonts/lato-v16-latin-regular.svg#Lato') format('svg');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/oscailte/fonts/merriweather-v21-latin-regular.eot');
+  src:
+    local('Merriweather Regular'),
+    local('Merriweather-Regular'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-regular.woff2') format('woff2'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-regular.woff') format('woff'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-regular.ttf') format('truetype'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-regular.svg#Merriweather') format('svg');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/oscailte/fonts/merriweather-v21-latin-italic.eot');
+  src:
+    local('Merriweather Italic'),
+    local('Merriweather-Italic'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-italic.eot?#iefix') format('embedded-opentype'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-italic.woff2') format('woff2'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-italic.woff') format('woff'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-italic.ttf') format('truetype'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-italic.svg#Merriweather') format('svg');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/oscailte/fonts/merriweather-v21-latin-700.eot');
+  src:
+    local('Merriweather Bold'),
+    local('Merriweather-Bold'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-700.woff2') format('woff2'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-700.woff') format('woff'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-700.ttf') format('truetype'),
+    url('/assets/oscailte/fonts/merriweather-v21-latin-700.svg#Merriweather') format('svg');
+}
