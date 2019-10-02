@@ -10,7 +10,6 @@ baseurl: "oscailte"
 url: "https://coog.ie"
 
 # Build settings
-theme: oscailte
 show_excerpts: true
 plugins:
   - jekyll-seo-tag
