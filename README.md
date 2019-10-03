@@ -1,6 +1,4 @@
-# Oscailte &mdash; A Jekyll theme
-
-![Gem Version](https://img.shields.io/gem/v/oscailte?style=flat-square)
+# Oscailte &mdash; A Jekyll theme [![Gem Version](https://img.shields.io/gem/v/oscailte?style=flat-square)](https://rubygems.org/gems/oscailte)
 
 Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Irish_pronunciation) Gaeilge for "Open") is a light and clean theme for use on [Jekyll](https://jekyllrb.org/) sites, released under the MIT Licence.
 
