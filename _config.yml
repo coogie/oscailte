@@ -21,18 +21,9 @@ permalink: /blog/:year/:month/:day/:title/
 oscailte:
   google_analytics: UA-36133007-3
   social:
-    github: jekyll
-    twitter: jekyllrb
+    github: coogie
+    twitter: coog_ie
     rss: rss
-    dribbble: jekyll
-    facebook: jekyll
-    flickr:   jekyll
-    instagram: jekyll
-    linkedin: jekyll
-    pinterest: jekyll
-    telegram: jekyll
-    microdotblog: jekyll
-    keybase: jekyll
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
