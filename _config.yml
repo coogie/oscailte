@@ -21,7 +21,7 @@ permalink: /blog/:year/:month/:day/:title/
 oscailte:
   google_analytics: UA-36133007-3
   social:
-    github: coogie
+    github: jekyll
     twitter: coog_ie
     rss: rss
 
