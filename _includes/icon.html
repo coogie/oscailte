@@ -1,2 +1,4 @@
 {%- capture path -%}/assets/oscailte/img/icons.svg#{{ include.icon }}{%- endcapture -%}
-<svg class="Icon Icon--{{ include.icon }}"><use xlink:href="{{ path | relative_url }}"></use></svg>
+<svg class="Icon Icon--{{ include.icon }}">
+  <use xlink:href="{{ path | relative_url }}"></use>
+</svg>
