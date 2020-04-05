@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "oscailte"
-  spec.version       = "3.0.1"
+  spec.version       = "3.0.2"
   spec.authors       = ["Stephen Coogan"]
   spec.email         = ["hello@coog.ie"]
 
@@ -14,10 +14,10 @@ Gem::Specification.new do |spec|
     f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
-  spec.add_runtime_dependency "jekyll", "~> 3.8.5"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.5.0"
-  spec.add_runtime_dependency "jekyll-avatar", "~> 0.6.0"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.11.0"
+  spec.add_runtime_dependency "jekyll", ">= 3.8", "< 5.0"
+  spec.add_runtime_dependency "jekyll-avatar", "~> 0.7"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.13"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6"
   
   spec.add_development_dependency "bundler", "~> 2.0.2"
   spec.add_development_dependency "rake", "~> 12.0"
