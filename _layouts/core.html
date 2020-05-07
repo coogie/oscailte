@@ -15,7 +15,7 @@
   <body class="Site {% if body_modifier != '' %}Site--{{ body_modifier }}{% endif %}">
     {%- include header.html -%}
 
-    <a href="#main-content" class="SkipNav" tabindex="1">{{ skip_to_main_content }}</a>
+    <a href="#main-content" class="SkipNav">{{ skip_to_main_content }}</a>
 
     <main class="Site__main o-no-owl" id="main-content">
       {{ content }}
