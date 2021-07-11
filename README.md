@@ -14,43 +14,42 @@ Oscailte ([IPA: [ˈɔsˠkɪlʲtʲɪ]](http://en.wiktionary.org/wiki/Appendix:Iri
 
 ## Installation
 
-<details>
-  <summary><strong>Install as Remote Theme</strong></summary>
+### Install as Remote Theme</strong></summary>
 
-  Using [Jekyll Remote Theme](https://github.com/benbalter/jekyll-remote-theme) (enabled
-  by default on Github Pages) is the quickest way to install Oscailte.
+Using [Jekyll Remote Theme](https://github.com/benbalter/jekyll-remote-theme) (enabled
+by default on Github Pages) is the quickest way to install Oscailte.
 
-  1. Add the following to your site's `_config.yml` to activate Oscailte  
+1. Add the following to your site's `_config.yml` to activate Oscailte
+
   ```yml
   remote_theme: coogie/oscailte
   ```
-</details>
 
-----
+### Install via Gemfile</strong></summary>
 
-<details>
-  <summary><strong>Install via Gemfile</strong></summary>
+1. Add this line to your Jekyll site's `Gemfile`:
 
-  1. Add this line to your Jekyll site's `Gemfile`:  
-  ```ruby
-  gem "oscailte"
-  ```
+```ruby
+gem "oscailte"
+```
 
-  2. And add this line to your Jekyll site's `_config.yml`:
-  ```yaml
-  theme: oscailte
-  ```
+2. And add this line to your Jekyll site's `_config.yml`:
 
-  3. And then execute:
-  ```sh
-  $ bundle
-  ```
+```yaml
+theme: oscailte
+```
 
-  4. Or install it yourself as:
-  ```sh
-  $ gem install oscailte
-  ```
-</details>
+3. And then execute:
+
+```sh
+$ bundle
+```
+
+4. Or install it yourself as:
+
+```sh
+$ gem install oscailte
+```
 
 ## Usage
 
