@@ -61,16 +61,17 @@ oscailte:
   posts_url:
   google_analytics:
   social:
-    twitter: jekyllrb
-    github: jekyll
-    dribbble: jekyll
-    facebook: jekyll
-    flickr: jekyll
-    instagram: jekyll
-    linkedin: jekyll
-    pinterest: jekyll
-    telegram: jekyll
-    keybase: jekyll
+    twitter: username
+    github: username
+    dribbble: username
+    facebook: username
+    flickr: username
+    instagram: username
+    linkedin: username
+    mastodon: https://instance.url/@username
+    pinterest: username
+    telegram: username
+    keybase: username
     rss: rss
   strings:
     skip_to_main_content: "Skip to main content"
