@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "oscailte"
-  spec.version       = "3.0.3"
+  spec.version       = "3.1.0"
   spec.authors       = ["Stephen Coogan"]
   spec.email         = ["hello@coog.ie"]
 
